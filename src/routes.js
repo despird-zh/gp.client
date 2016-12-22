@@ -1,7 +1,7 @@
 // this file define all the routing information
 import Error404 from './pages/Error';
 import Home from './pages/Home';
-
+import Demo from './pages/Demo';
 const Personal = [];
 
 const WGroup = [];
@@ -18,6 +18,11 @@ const Extra = [
     path: '/home',
     name: 'Welcome',
     redirect: '/'
+  },
+  {
+    path: '/demo',
+    name: 'Demo',
+    component: Demo
   }
 ];
 
