@@ -2,41 +2,30 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import VueResource from 'vue-resource';
-import VueMaterial from 'vue-material';
+import { switchTheme } from './config.js';
 
 import 'vue-material/dist/vue-material.css';
 
-Vue.use(VueMaterial);
-Vue.material.registerTheme('default', {
-  primary: 'blue',
-  accent: 'red',
-  warn: 'red',
-  background: 'grey'
-});
-
 Vue.use(VueRouter);
 Vue.use(VueResource);
-
+// initialize the common components
 import './components/index.js';
-
+// initialize the definition of route setting.
+import routes from './routes.js';
+// initialize the application main entrance
 import App from './App';
-import Home from './pages/Home';
-const routes = [{
-  path: '/',
-  component: Home
-}, {
-  path: '/home',
-  component: Home
-}];
-
+// initialize the routing information
 const router = new VueRouter({
   routes
 });
 
+// load the main page component(root)
 let GPressMain = Vue.component('gpress-main', App);
 
+// create a Vue instance to bootstrap the page
 GPressMain = new GPressMain({
   el: '#gpress-main',
   router
 });
-
+// set default theme of whole page
+switchTheme('default');

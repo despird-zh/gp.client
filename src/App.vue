@@ -337,6 +337,7 @@
     },
     methods: {
       toggleSidenav() {
+        console.log(this.$refs['main-sidebar'].mdVisible);
         this.$refs['main-sidebar'].toggle();
       },
       closeSidenav() {
