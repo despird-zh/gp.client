@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" :class="{ 'hide-sidenav': embedSizenav }" >
     <md-sidenav class="main-sidebar md-left md-fixed" ref="main-sidebar">
       <md-toolbar class="vue-material-logo" md-theme="white">
         <router-link exact to="/">
@@ -191,7 +191,11 @@
     transition: $swift-ease-out;
 
     @media (min-width: $embed-sidenav-width){
-        padding-left: $sizebar-width;
+      padding-left: $sizebar-width;
+    }
+
+    &.hide-sidenav{
+      padding-left: 0;
     }
   }
 
@@ -206,6 +210,10 @@
         pointer-events: auto;
         transform: translate3d(0, 0, 0);
         box-shadow: $material-shadow-2dp;
+      }
+      /* reset the transform when apply .hide-sidenav on .container */
+      @at-root .hide-sidenav &{
+        transform: translate3D(-100%, 0, 0);
       }
     }
 
@@ -325,7 +333,8 @@
       return {
         toolbar: true,
         theme: 'default',
-        pageTitle: ''
+        pageTitle: '',
+        embedSizenav: false
       };
     },
     computed: {
@@ -335,6 +344,17 @@
     },
     methods: {
       toggleSidenav() {
+        let mediaWidth = window.innerWidth;
+
+        console.log('media is :' + mediaWidth);
+        if (mediaWidth > 1281) {
+          this.embedSizenav = !this.embedSizenav;
+          console.log(this.embedSizenav);
+          return;
+        }
+
+        this.embedSizenav = false;
+
         this.$refs['main-sidebar'].toggle();
       },
       closeSidenav() {

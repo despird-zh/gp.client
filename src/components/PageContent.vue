@@ -2,7 +2,7 @@
   <div class="page-content">
     <md-whiteframe md-elevation="1" class="main-header">
       <md-toolbar>
-        <md-button class="md-icon-button nav-trigger" @click="toggleSidenav">
+        <md-button class="md-icon-button " @click="toggleSidenav">
           <md-icon>menu</md-icon>
         </md-button>
 
