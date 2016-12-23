@@ -2,6 +2,7 @@
 import Error404 from './pages/Error';
 import Home from './pages/Home';
 import Demo from './pages/Demo';
+import Demo1 from './pages/Demo1';
 const Personal = [];
 
 const WGroup = [];
@@ -23,6 +24,11 @@ const Extra = [
     path: '/demo',
     name: 'Demo',
     component: Demo
+  },
+  {
+    path: '/demo1',
+    name: 'Demo1',
+    component: Demo1
   }
 ];
 

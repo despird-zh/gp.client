@@ -169,8 +169,6 @@
 <style lang="scss">
   @import './assets/styles/mdl-variables.scss';
 
-  $sizebar-size: 280px;
-
   [v-cloak] {
     display: none;
   }
@@ -192,18 +190,18 @@
     flex: 1;
     transition: $swift-ease-out;
 
-    @media (min-width: 1281px) {
-      padding-left: $sizebar-size;
+    @media (min-width: $embed-sidenav-width){
+        padding-left: $sizebar-width;
     }
   }
 
   .main-sidebar.md-sidenav {
     .md-sidenav-content {
-      width: $sizebar-size;
+      width: $sizebar-width;
       display: flex;
       flex-flow: column;
 
-      @media (min-width: 1281px) {
+      @media (min-width: $embed-sidenav-width) {
         top: 0;
         pointer-events: auto;
         transform: translate3d(0, 0, 0);
@@ -212,7 +210,7 @@
     }
 
     .md-backdrop {
-      @media (min-width: 1281px) {
+      @media (min-width: $embed-sidenav-width) {
         opacity: 0;
         pointer-events: none;
       }
@@ -278,8 +276,8 @@
     right: 0;
     left: 0;
 
-    @media (min-width: 1281px) {
-      left: $sizebar-size;
+    @media (min-width: $embed-sidenav-width) {
+      left: $sizebar-width;
     }
 
     .main-content {
@@ -337,12 +335,14 @@
     },
     methods: {
       toggleSidenav() {
-        console.log(this.$refs['main-sidebar'].mdVisible);
         this.$refs['main-sidebar'].toggle();
       },
       closeSidenav() {
         this.$refs['main-sidebar'].close();
       }
-    }
+    }//,
+   // mounted: function() {
+      //console.log(this.$mq.aboveSidenavEmbedWidth);
+   // }
   };
 </script>

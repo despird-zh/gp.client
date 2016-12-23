@@ -8,13 +8,14 @@
 
         <div class="md-title">{{ pageTitle }}</div>
         <div class="gp-notif-container">
-          <md-icon class="">home</md-icon>
-          <md-icon class="md-accent">home</md-icon>
-          <md-icon class="md-warn">home</md-icon>
+          <md-icon >email</md-icon>
+          <md-icon >message</md-icon>
+          <md-avatar>
+            <img src="assets/images/avatar.png" alt="Avatar">
+          </md-avatar>
+          <md-icon>more_vert</md-icon>
         </div>
-        <md-avatar>
-          <img src="assets/images/avatar.png" alt="Avatar">
-        </md-avatar>
+
       </md-toolbar>
     </md-whiteframe>
 
@@ -23,6 +24,8 @@
 </template>
 
 <style lang="scss" scoped>
+  @import '../assets/styles/mdl-variables.scss';
+
   .page-content {
     min-height: 100%;
     max-height: 100%;
@@ -41,7 +44,7 @@
   }
 
   .nav-trigger {
-    @media (min-width: 1281px) {
+    @media (min-width: $embed-sidenav-width) {
       display: none;
     }
   }
@@ -49,7 +52,7 @@
   .md-title {
     flex: 1;
  
-    @media (min-width: 1281px) {
+    @media (min-width: $embed-sidenav-width) {
       margin-left: 8px;
     }
   }

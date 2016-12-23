@@ -3,7 +3,6 @@ import VueMaterial from 'vue-material';
 
 // register the vue-material components
 Vue.use(VueMaterial);
-
 // define the theme setting list
 Vue.material.registerTheme({
   default: {
