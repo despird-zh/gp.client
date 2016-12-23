@@ -346,10 +346,8 @@
       toggleSidenav() {
         let mediaWidth = window.innerWidth;
 
-        console.log('media is :' + mediaWidth);
         if (mediaWidth > 1281) {
           this.embedSizenav = !this.embedSizenav;
-          console.log(this.embedSizenav);
           return;
         }
 

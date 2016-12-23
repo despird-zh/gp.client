@@ -72,23 +72,7 @@
      margin-right:5px;
    }
  }
-  /*.release-version {
-    display: flex;
-    align-items: center;
-    font-size: 15px;
 
-    .md-select {
-      width: auto;
-      min-width: auto;
-      margin: 0 8px;
-    }
-  }
-
-  .github {
-    @media (max-width: 480px) {
-      display: none;
-    }
-  }*/
 </style>
 
 <script>
@@ -102,48 +86,11 @@
       availableDocs: []
     }),
     methods: {
-      changeDocs() {
-        const location = window.location;
-
-        if (this.currentDocs === this.latest) {
-          window.location.href = location.origin + '/' + location.hash;
-        } else {
-          window.location.href = location.origin + '/releases/v' + this.currentDocs + '/' + location.hash;
-        }
-      },
       toggleSidenav() {
         this.$root.toggleSidenav();
-      },
-      getVersions(callback) {
-        const request = new XMLHttpRequest();
-
-        request.open('GET', '/versions.json', true);
-        request.setRequestHeader('Content-Type', 'application/json');
-        request.onload = function() {
-          callback(JSON.parse(this.response));
-        };
-        request.send();
-      },
-      setVersion(versions) {
-        versions.sort((a, b) => a < b);
-
-        this.latest = versions[0];
-        this.currentDocs = versions[0];
-        this.availableDocs = versions;
-      },
-      setCurrentByLocation() {
-        let normalizedPathname = location.pathname.replace(/\/|releases\/v/g, '');
-
-        if (normalizedPathname && this.availableDocs.indexOf(normalizedPathname) >= 0) {
-          this.currentDocs = normalizedPathname;
-        }
       }
     },
     mounted() {
-      /*this.getVersions((response) => {
-        this.setVersion(response);
-        this.setCurrentByLocation();
-      });*/
 
       document.title = this.pageTitle + ' - Vue Material';
     }
