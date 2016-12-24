@@ -2,9 +2,52 @@
   <page-content page-title="Demo">
     <div class="main-content page-layout">
       <div class="page-content">
+      <div class="page-toolbar">
+        <md-button class="md-icon-button md-raised md-dense">
+          <md-icon>add</md-icon>
+        </md-button>
+        <md-button class="md-icon-button md-raised md-dense">
+          <md-icon>add</md-icon>
+        </md-button>
+        <md-button class="md-icon-button md-raised md-dense">
+          <md-icon>add</md-icon>
+        </md-button>
+      </div>
       <md-tabs :md-dynamic-height="false" class="md-transparent" ref="page_tabs" v-if="slotNames.length > 1 || !$slots.default">
         <md-tab class="api-tab" md-label="Properties">
-          <div>slslslsl</div>
+          <div>
+            <form novalidate @submit.stop.prevent="submit">
+              <md-input-container>
+                <label>Initial value</label>
+                <md-input v-model="initialValue"></md-input>
+              </md-input-container>
+
+              <md-input-container>
+                <label>With label</label>
+                <md-input placeholder="My nice placeholder"></md-input>
+              </md-input-container>
+
+              <md-input-container md-inline>
+                <label>Inline field</label>
+                <md-input></md-input>
+              </md-input-container>
+
+              <md-input-container>
+                <label>Number</label>
+                <md-input type="number"></md-input>
+              </md-input-container>
+
+              <md-input-container>
+                <label>Textarea</label>
+                <md-textarea></md-textarea>
+              </md-input-container>
+
+              <md-input-container>
+                <label>Disabled</label>
+                <md-input disabled></md-input>
+              </md-input-container>
+            </form>
+          </div>
         </md-tab>
 
         <md-tab class="api-tab" md-label="Classes">
@@ -76,13 +119,20 @@
 
     .page-content{
       flex-grow: 1;
+      flex-shrink: 1;
       padding-right: $gap-size;
+      
+      .page-toolbar{
+        display: flex;
+        justify-content: flex-end;
+      }
     }
 
     .page-rightnav{
       flex: 0 0 320px;
     }
   }
+
   .api-table + .api-table {
     margin-top: 42px;
   }

@@ -2,22 +2,22 @@
   <div class="page-content">
     <md-whiteframe md-elevation="1" class="main-header">
       <md-toolbar>
-        <md-button class="md-icon-button " @click="toggleSidenav">
+        <md-button class="md-icon-button" @click="toggleSidenav">
           <md-icon>menu</md-icon>
         </md-button>
 
         <div class="md-title">{{ pageTitle }}</div>
         <div class="gp-notif-container">
-          <md-button class="md-icon-button">
+          <md-button class="md-icon-button md-raised md-dense">
             <md-icon >email</md-icon>
           </md-button>
-          <md-button class="md-icon-button">
+          <md-button class="md-icon-button md-raised md-dense">
             <md-icon >message</md-icon>
           </md-button>
           <md-avatar>
             <img src="assets/images/avatar.png" alt="Avatar">
           </md-avatar>
-          <md-button class="md-icon-button">
+          <md-button class="md-icon-button md-raised md-dense">
             <md-icon>more_vert</md-icon>
           </md-button>
         </div>
