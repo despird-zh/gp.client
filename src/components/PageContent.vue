@@ -8,12 +8,18 @@
 
         <div class="md-title">{{ pageTitle }}</div>
         <div class="gp-notif-container">
-          <md-icon >email</md-icon>
-          <md-icon >message</md-icon>
+          <md-button class="md-icon-button">
+            <md-icon >email</md-icon>
+          </md-button>
+          <md-button class="md-icon-button">
+            <md-icon >message</md-icon>
+          </md-button>
           <md-avatar>
             <img src="assets/images/avatar.png" alt="Avatar">
           </md-avatar>
-          <md-icon>more_vert</md-icon>
+          <md-button class="md-icon-button">
+            <md-icon>more_vert</md-icon>
+          </md-button>
         </div>
 
       </md-toolbar>
@@ -67,10 +73,7 @@
 
  .gp-notif-container{
    margin-right:5px;
-   
-   .md-icon{
-     margin-right:5px;
-   }
+
  }
 
 </style>
