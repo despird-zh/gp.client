@@ -89,16 +89,16 @@
         </md-card>
         <md-whiteframe md-elevation="2" class="md-m-b">
         <md-tabs >
-          <md-tab id="movies" md-label="Movies">
+          <md-tab id="movies" md-label="Groups">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
           </md-tab>
 
-          <md-tab id="music" md-label="Music">
+          <md-tab id="music" md-label="Folders">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
           </md-tab>
 
-          <md-tab id="books" md-label="Books">
+          <md-tab id="books" md-label="Chats">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
           </md-tab>
 
