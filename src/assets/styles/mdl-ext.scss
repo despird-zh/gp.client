@@ -1,0 +1,12 @@
+@import './mdl-variables.scss';
+
+.md-tabs {
+  .md-tabs-navigation {
+    height: $tabs-nav-height;
+    min-height: $tabs-nav-height;
+  }
+}
+
+.md-m-b{
+    margin-bottom: $gap-size;
+}

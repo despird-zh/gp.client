@@ -5,6 +5,7 @@ import VueResource from 'vue-resource';
 import { switchTheme } from './config.js';
 
 import 'vue-material/dist/vue-material.css';
+import './assets/styles/mdl-ext.scss';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);

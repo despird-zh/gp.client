@@ -268,7 +268,7 @@
   }
 
   .main-content {
-    padding: 16px;
+    padding: 12px;
     flex: 1;
     overflow: auto;
     background-color: #fff;
