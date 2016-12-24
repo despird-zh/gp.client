@@ -2,7 +2,7 @@
   <page-content page-title="Demo">
     <div class="main-content page-layout">
       <div class="page-content">
-      <md-tabs :md-dynamic-height="false" class="md-transparent" v-if="slotNames.length > 1 || !$slots.default">
+      <md-tabs :md-dynamic-height="false" class="md-transparent" ref="page_tabs" v-if="slotNames.length > 1 || !$slots.default">
         <md-tab class="api-tab" md-label="Properties">
           <div>slslslsl</div>
         </md-tab>

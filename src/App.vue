@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :class="{ 'hide-sidenav': embedSizenav }" >
+  <div class="container" :class="{ 'hide-sidenav': embedSidenav }" >
     <md-sidenav class="main-sidebar md-left md-fixed" ref="main-sidebar">
       <md-toolbar class="vue-material-logo" md-theme="white">
         <router-link exact to="/">
@@ -320,7 +320,7 @@
         toolbar: true,
         theme: 'default',
         pageTitle: '',
-        embedSizenav: false
+        embedSidenav: false
       };
     },
     computed: {
@@ -332,12 +332,13 @@
       toggleSidenav() {
         let mediaWidth = window.innerWidth;
 
+        // media width > 1281, apply the [hide-sidenav] to hide sidenav
         if (mediaWidth > 1281) {
-          this.embedSizenav = !this.embedSizenav;
+          this.embedSidenav = !this.embedSidenav;
           return;
         }
 
-        this.embedSizenav = false;
+        this.embedSidenav = false;
 
         this.$refs['main-sidebar'].toggle();
       },
