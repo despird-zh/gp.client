@@ -8,16 +8,16 @@
 
         <div class="md-title">{{ pageTitle }}</div>
         <div class="gp-notif-container">
-          <md-button class="md-icon-button md-raised md-dense">
+          <md-button class="md-icon-button md-dense">
             <md-icon >email</md-icon>
           </md-button>
-          <md-button class="md-icon-button md-raised md-dense">
+          <md-button class="md-icon-button md-dense">
             <md-icon >message</md-icon>
           </md-button>
-          <md-avatar>
+          <md-avatar class="md-dense">
             <img src="assets/images/avatar.png" alt="Avatar">
           </md-avatar>
-          <md-button class="md-icon-button md-raised md-dense">
+          <md-button class="md-icon-button md-dense">
             <md-icon>more_vert</md-icon>
           </md-button>
         </div>

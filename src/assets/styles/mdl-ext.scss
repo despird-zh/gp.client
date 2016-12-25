@@ -9,6 +9,14 @@
 .md-input-container {
     margin-bottom: $gap-size;
 }
+
+.md-dense.md-avatar {
+    width: $dense-avatar-size;
+    min-width: $dense-avatar-size;
+    height: $dense-avatar-size;
+    min-height: $dense-avatar-size;
+}
+
 .md-m-b{
     margin-bottom: $gap-size;
 }

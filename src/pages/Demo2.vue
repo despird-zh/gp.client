@@ -157,7 +157,7 @@
     computed: {
       slotNames() {
         return Object.keys(this.$slots);
-        
+
       }
     }
   };
