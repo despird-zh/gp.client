@@ -91,11 +91,7 @@
     methods: {
       toggleSidenav() {
         this.$root.toggleSidenav();
-        /*console.log(this.$refs.page_tabs);
-        if (this.$refs.page_tabs) {
-          console.log('---s-s-s');
-          this.$refs.page_tabs.calculatePosition();
-        }*/
+        this.$emit('hidesidenav');
       }
     },
     mounted() {

@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Demo1">
+  <page-content page-title="Demo1" v-on:hidesidenav="onHideSidenav()">
     <div class="main-content page-layout">
       <div class="page-content">
       <md-toolbar class="page-toolbar md-transparent">
@@ -13,7 +13,7 @@
           <md-icon>add</md-icon>
         </md-button>
       </md-toolbar>
-      <md-tabs :md-dynamic-height="false" class="md-transparent" ref="page_tabs" v-if="slotNames.length > 1 || !$slots.default">
+      <md-tabs :md-dynamic-height="false" class="md-transparent" ref="pageTabs" v-if="slotNames.length > 1 || !$slots.default">
         <md-tab class="api-tab" md-label="Properties">
           <div class="md-p">
             <form novalidate @submit.stop.prevent="submit">
@@ -225,12 +225,24 @@
 
 <script>
   export default {
+    data: function() {
+      return {
+        initialValue: 'Demo2 Value'
+      };
+    },
     props: {
       name: String
     },
     computed: {
       slotNames() {
         return Object.keys(this.$slots);
+      }
+    },
+    methods: {
+      //when hide side nav, need to recalculate the width of tabs
+      onHideSidenav: function() {
+        console.log(this.$refs.pageTabs);
+        this.$refs.pageTabs.calculateOnWatch();
       }
     }
   };

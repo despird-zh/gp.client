@@ -151,6 +151,11 @@
 
 <script>
   export default {
+    data: function() {
+      return {
+        initialValue: 'Demo2 Value'
+      };
+    },
     props: {
       name: String
     },
