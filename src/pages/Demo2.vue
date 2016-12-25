@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Demo1">
+  <page-content page-title="Demo2">
     <div class="main-content page-layout">
       <div class="page-content">
       <md-toolbar class="page-toolbar md-transparent">

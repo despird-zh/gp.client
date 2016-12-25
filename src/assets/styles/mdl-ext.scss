@@ -6,7 +6,13 @@
     min-height: $tabs-nav-height;
   }
 }
-
+.md-input-container {
+    margin-bottom: $gap-size;
+}
 .md-m-b{
     margin-bottom: $gap-size;
+}
+
+.md-p{
+  padding: $gap-size;
 }

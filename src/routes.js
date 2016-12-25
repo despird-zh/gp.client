@@ -3,6 +3,7 @@ import Error404 from './pages/Error';
 import Home from './pages/Home';
 import Demo from './pages/Demo';
 import Demo1 from './pages/Demo1';
+import Demo2 from './pages/Demo2';
 const Personal = [];
 
 const WGroup = [];
@@ -29,6 +30,11 @@ const Extra = [
     path: '/demo1',
     name: 'Demo1',
     component: Demo1
+  },
+  {
+    path: '/demo2',
+    name: 'Demo2',
+    component: Demo2
   }
 ];
 

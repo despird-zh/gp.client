@@ -19,21 +19,23 @@
           </md-list-item>
 
           <md-list-item>
-            <span>Themes</span>
+            <span>Demo Pages</span>
 
             <md-list-expand>
               <md-list>
                 <md-list-item class="md-inset">
-                  <router-link exact to="/themes/configuration">Configuration</router-link>
+                  <router-link exact to="/demo">demo</router-link>
                 </md-list-item>
 
                 <md-list-item class="md-inset">
-                  <router-link exact to="/themes/dynamic-themes">Dynamic Theme</router-link>
+                  <router-link exact to="/demo1">Demo1 page</router-link>
+                </md-list-item>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/demo2">Demo2 page</router-link>
                 </md-list-item>
               </md-list>
             </md-list-expand>
           </md-list-item>
-
           <md-list-item>
             <span>Components</span>
 
@@ -99,6 +101,10 @@
                   <router-link exact to="/components/sidenav">Sidenav</router-link>
                 </md-list-item>
 
+                <!-- <md-list-item class="md-inset">
+                  <router-link exact to="/components/snackbar">Snackbar</router-link>
+                </md-list-item> -->
+
                 <md-list-item class="md-inset">
                   <router-link exact to="/components/spinner">Spinner</router-link>
                 </md-list-item>
@@ -133,22 +139,10 @@
               </md-list>
             </md-list-expand>
           </md-list-item>
-
-          <md-list-item>
-            <span>UI Elements</span>
-            <md-list-expand>
-              <md-list>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/ui-elements/layout">Layout</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/ui-elements/typography">Typography</router-link>
-                </md-list-item>
-              </md-list>
-            </md-list-expand>
-          </md-list-item>
-
+        </md-list>
+      </div>
+      <div class="main-sidebar-bottom">
+        <md-list class="md-dense">
           <md-list-item>
             <router-link exact to="/changelog">Changelog</router-link>
           </md-list-item>
@@ -255,10 +249,19 @@
 
     .main-sidebar-links {
       overflow: auto;
-
+      flex: 1;
       .md-inset .md-list-item-container {
         padding-left: 36px;
       }
+
+      .md-list-item-container {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    .main-sidebar-bottom{
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
 
       .md-list-item-container {
         font-size: 14px;
