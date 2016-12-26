@@ -1,5 +1,5 @@
 <template>
-  <page-content page-title="Demo1" v-on:hidesidenav="onHideSidenav()">
+  <page-content page-title="Demo1">
     <div class="main-content page-layout">
       <div class="page-content">
       <md-toolbar class="page-toolbar md-transparent">
@@ -239,11 +239,7 @@
       }
     },
     methods: {
-      //when hide side nav, need to recalculate the width of tabs
-      onHideSidenav: function() {
-        console.log(this.$refs.pageTabs);
-        this.$refs.pageTabs.calculateOnWatch();
-      }
+      
     }
   };
 </script>

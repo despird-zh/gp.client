@@ -91,7 +91,6 @@
     methods: {
       toggleSidenav() {
         this.$root.toggleSidenav();
-        this.$emit('hidesidenav');
       }
     },
     mounted() {
