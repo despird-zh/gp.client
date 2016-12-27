@@ -3,24 +3,24 @@
     <div class="main-content page-layout">
       <page-box class="page-content" card-title="Flat">
         <div slot="demo">
-            <md-button>Default</md-button>
-            <md-button class="md-primary">Primary</md-button>
-            <md-button class="md-accent">Accent</md-button>
-            <md-button class="md-warn">Warn</md-button>
-            <md-button class="md-primary" disabled>Disabled</md-button>
-            <md-button class="md-dense">Dense</md-button>
-          </div>
+          <md-button>Default</md-button>
+          <md-button class="md-primary">Primary</md-button>
+          <md-button class="md-accent">Accent</md-button>
+          <md-button class="md-warn">Warn</md-button>
+          <md-button class="md-primary" disabled>Disabled</md-button>
+          <md-button class="md-dense">Dense</md-button>
+        </div>
 
-          <div slot="code">
-            <code-block lang="xml">
-              &lt;md-button&gt;Default&lt;/md-button&gt;
-              &lt;md-button class=&quot;md-primary&quot;&gt;Primary&lt;/md-button&gt;
-              &lt;md-button class=&quot;md-accent&quot;&gt;Accent&lt;/md-button&gt;
-              &lt;md-button class=&quot;md-warn&quot;&gt;Warn&lt;/md-button&gt;
-              &lt;md-button class=&quot;md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
-              &lt;md-button class=&quot;md-dense&quot;&gt;Dense&lt;/md-button&gt;
-            </code-block>
-          </div>
+        <div slot="code">
+          <code-block lang="xml">
+            &lt;md-button&gt;Default&lt;/md-button&gt;
+            &lt;md-button class=&quot;md-primary&quot;&gt;Primary&lt;/md-button&gt;
+            &lt;md-button class=&quot;md-accent&quot;&gt;Accent&lt;/md-button&gt;
+            &lt;md-button class=&quot;md-warn&quot;&gt;Warn&lt;/md-button&gt;
+            &lt;md-button class=&quot;md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
+            &lt;md-button class=&quot;md-dense&quot;&gt;Dense&lt;/md-button&gt;
+          </code-block>
+        </div>
       </page-box>
       <div class="page-rightnav">
         <md-card class="md-m-b">
