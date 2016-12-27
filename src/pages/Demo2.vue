@@ -1,68 +1,27 @@
 <template>
   <page-content page-title="Demo2">
     <div class="main-content page-layout">
-      <div class="page-content">
-      <md-toolbar class="page-toolbar md-transparent">
-        <md-button class="md-icon-button md-raised md-dense">
-          <md-icon>add</md-icon>
-        </md-button>
-        <md-button class="md-icon-button md-raised md-dense">
-          <md-icon>add</md-icon>
-        </md-button>
-        <md-button class="md-icon-button md-raised md-dense">
-          <md-icon>add</md-icon>
-        </md-button>
-      </md-toolbar>
-      <md-tabs :md-dynamic-height="false" class="md-transparent" ref="page_tabs" v-if="slotNames.length > 1 || !$slots.default">
-        <md-tab class="api-tab" md-label="Properties">
-          <div class="md-p">
-            <form novalidate @submit.stop.prevent="submit">
-              <md-input-container>
-                <label>Initial value</label>
-                <md-input v-model="initialValue"></md-input>
-              </md-input-container>
-
-              <md-input-container>
-                <label>With label</label>
-                <md-input placeholder="My nice placeholder"></md-input>
-              </md-input-container>
-
-              <md-input-container md-inline>
-                <label>Inline field</label>
-                <md-input></md-input>
-              </md-input-container>
-
-              <md-input-container>
-                <label>Number</label>
-                <md-input type="number"></md-input>
-              </md-input-container>
-
-              <md-input-container>
-                <label>Textarea</label>
-                <md-textarea></md-textarea>
-              </md-input-container>
-
-              <md-input-container>
-                <label>Disabled</label>
-                <md-input disabled></md-input>
-              </md-input-container>
-            </form>
+      <page-box class="page-content" card-title="Flat">
+        <div slot="demo">
+            <md-button>Default</md-button>
+            <md-button class="md-primary">Primary</md-button>
+            <md-button class="md-accent">Accent</md-button>
+            <md-button class="md-warn">Warn</md-button>
+            <md-button class="md-primary" disabled>Disabled</md-button>
+            <md-button class="md-dense">Dense</md-button>
           </div>
-        </md-tab>
 
-        <md-tab class="api-tab" md-label="Classes">
-          <div>tttttt</div>
-        </md-tab>
-
-        <md-tab class="api-tab" md-label="Events" >
-          <div>hjkghjk</div>
-        </md-tab>
-
-        <md-tab class="api-tab" md-label="Methods" >
-          <div>asdfsadf</div>
-        </md-tab>
-      </md-tabs>
-      </div>
+          <div slot="code">
+            <code-block lang="xml">
+              &lt;md-button&gt;Default&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-primary&quot;&gt;Primary&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-accent&quot;&gt;Accent&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-warn&quot;&gt;Warn&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
+              &lt;md-button class=&quot;md-dense&quot;&gt;Dense&lt;/md-button&gt;
+            </code-block>
+          </div>
+      </page-box>
       <div class="page-rightnav">
         <md-card class="md-m-b">
           <md-card-header>
@@ -88,7 +47,7 @@
           </md-card-actions>
         </md-card>
         <md-whiteframe md-elevation="2" class="md-m-b">
-        <md-tabs >
+        <md-tabs class="md-transparent">
           <md-tab id="movies" md-label="Groups">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
           </md-tab>
@@ -120,28 +79,13 @@
     .page-content{
       flex-grow: 1;
       flex-shrink: 1;
+      display: flex;
       padding-right: $gap-size;
-      
-      .page-toolbar{
-        display: flex;
-        justify-content: flex-end;
-        height: $tabs-nav-height;
-        min-height: $tabs-nav-height;
-        margin-bottom: -$tabs-nav-height;
-      }
     }
 
     .page-rightnav{
       flex: 0 0 320px;
     }
-  }
-
-  .api-table + .api-table {
-    margin-top: 42px;
-  }
-
-  .api-tab {
-    padding: 0;
   }
 
   .md-title {
