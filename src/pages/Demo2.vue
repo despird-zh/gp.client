@@ -42,7 +42,13 @@
           </md-card-content>
 
           <md-card-actions>
-            <md-button>Action</md-button>
+            <md-button class="md-fab md-warn md-mini">
+                <md-icon>save</md-icon>
+              </md-button>
+
+              <md-button class="md-fab md-clean md-mini">
+                <md-icon>dialpad</md-icon>
+              </md-button>
             <md-button>Action</md-button>
           </md-card-actions>
         </md-card>
