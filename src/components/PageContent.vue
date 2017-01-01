@@ -8,7 +8,7 @@
 
         <div class="md-title">{{ pageTitle }}</div>
         <div class="gp-notif-container">
-          <md-button class="md-icon-button md-dense">
+          <md-button class="md-icon-button md-dense" @click="logon">
             <md-icon >email</md-icon>
           </md-button>
           <md-button class="md-icon-button md-dense">
@@ -91,6 +91,9 @@
     methods: {
       toggleSidenav() {
         this.$root.toggleSidenav();
+      },
+      logon() {
+        this.$root.$refs.loginBox.showLogon();
       }
     },
     mounted() {

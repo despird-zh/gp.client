@@ -157,6 +157,7 @@
     <transition name="md-router" appear>
       <router-view></router-view>
     </transition>
+    <login-box ref="loginBox"></login-box>
   </div>
 </template>
 
@@ -348,9 +349,9 @@
       closeSidenav() {
         this.$refs['main-sidebar'].close();
       }
-    }//,
-   // mounted: function() {
-      //console.log(this.$mq.aboveSidenavEmbedWidth);
-   // }
+    },
+    mounted: function() {
+      //this.$refs.loginBox.showLogon();
+    }
   };
 </script>

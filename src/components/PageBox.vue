@@ -44,9 +44,6 @@
     overflow: hidden;
     flex: 1;
   }
-
-  
-
 </style>
 
 <script>
