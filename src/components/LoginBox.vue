@@ -28,7 +28,10 @@
 </style>
 
 <script>
+import httpOptions from '../utils/jwttoken';
+
 export default {
+  mixins: [httpOptions],
   data: () => ({
     account: '',
     password: ''
@@ -36,6 +39,18 @@ export default {
   methods: {
     closeLogon() {
       this.$refs.loginBox.close();
+    },
+    submitLogon() {
+      let options = this.$httpOptions({
+        account: this.account,
+        credential: this.passowrd
+      });
+
+      this.$http.get('authenticate.do', options).then(function(response) {
+        console.log(response);
+      }, function(response) {
+        console.log(response);
+      });
     },
     showLogon() {
       this.$refs.loginBox.open();
