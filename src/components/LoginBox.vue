@@ -46,7 +46,8 @@ export default {
         credential: this.passowrd
       });
 
-      this.$http.get('authenticate.do', options).then(function(response) {
+      console.log(options);
+      this.$http.get(this.$httpUrl('authenticate.do'), options).then(function(response) {
         console.log(response);
       }, function(response) {
         console.log(response);

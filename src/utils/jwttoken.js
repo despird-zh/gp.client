@@ -11,10 +11,11 @@ export default {
   methods: {
     $httpOptions(options) {
 
-      options['headers'] = {
-        AuthJwtToken: this.jwttoken
-      };
-
+      if (this.jwttoken) {
+        options['headers'] = {
+          AuthJwtToken: this.jwttoken
+        };
+      }
       return options;
     },
     $httpUrl(url) {
