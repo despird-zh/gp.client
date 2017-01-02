@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import VueResource from 'vue-resource';
 import { switchTheme } from './config.js';
+import * as store from './store';
 
 import 'vue-material/dist/vue-material.css';
 import './assets/styles/mdl-ext.scss';
@@ -26,6 +27,7 @@ let GPressMain = Vue.component('gpress-main', App);
 // create a Vue instance to bootstrap the page
 GPressMain = new GPressMain({
   el: '#gpress-main',
+  store,
   router
 });
 // set default theme of whole page

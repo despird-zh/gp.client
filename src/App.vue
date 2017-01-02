@@ -349,9 +349,6 @@
       closeSidenav() {
         this.$refs['main-sidebar'].close();
       }
-    },
-    mounted: function() {
-      //this.$refs.loginBox.showLogon();
     }
   };
 </script>
