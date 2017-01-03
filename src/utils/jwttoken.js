@@ -4,13 +4,14 @@ export default {
 
   methods: {
     $httpOptions(options) {
+      let httpOpts = { params: options};
 
       if (this.jwttoken) {
-        options['headers'] = {
+        httpOpts['headers'] = {
           AuthJwtToken: this.jwttoken
         };
       }
-      return options;
+      return httpOpts;
     },
     $httpUrl(url) {
 

@@ -12,9 +12,9 @@ export const state = {
   baseUrl: 'http://localhost:8010/gp_svc/',
   authenticated: false,
   principal: {
-    subject: '',
-    credential: '',
-    jwttoken: ''
+    subject: 'dev1',
+    credential: '1',
+    jwttoken: 'asdfasdf'
   }
 };
 

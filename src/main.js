@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 import VueResource from 'vue-resource';
 import { switchTheme } from './config.js';
-import store from './store/store.js';
+import store from './store';
 
 import 'vue-material/dist/vue-material.css';
 import './assets/styles/mdl-ext.scss';

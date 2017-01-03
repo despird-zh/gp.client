@@ -32,30 +32,31 @@ import httpOptions from '../utils/jwttoken';
 import {mapState, mapGetters, mapActions} from 'Vuex';
 
 export default {
-  //mixins: [httpOptions],
+  mixins: [httpOptions],
   data: () => ({
-    account: '',
-    password: ''
+    account: 'dev1',
+    password: '1'
   }),
   computed: {
-    ...mapGetters(['jwtToken'])
+    ...mapGetters(['jwttoken', 'subject', 'baseUrl'])
   },
   methods: {
     closeLogon() {
       this.$refs.loginBox.close();
     },
     submitLogon() {
-      //let options = this.$httpOptions({
-      //  account: this.account,
-      //  credential: this.passowrd
-      //});
-      console.log(this.$store);
-      console.log(this.jwtToken);
-      //this.$http.get(this.$httpUrl('authenticate.do'), options).then(function(response) {
-      //  console.log(response);
-      //}, function(response) {
-      //  console.log(response);
-      //});
+      let options = this.$httpOptions({
+        account: this.account,
+        credential: this.password
+      });
+
+      console.log(options);
+
+      this.$http.post(this.$httpUrl('authenticate.do'), options).then(function(response) {
+        console.log(response);
+      }, function(response) {
+        console.log(response);
+      });
     },
     showLogon() {
       this.$refs.loginBox.open();
