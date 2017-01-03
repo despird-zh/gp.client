@@ -29,20 +29,16 @@
 
 <script>
 import httpOptions from '../utils/jwttoken';
-import { mapGetters } from 'vuex';
+import {mapState, mapGetters, mapActions} from 'Vuex';
 
 export default {
-  mixins: [httpOptions],
+  //mixins: [httpOptions],
   data: () => ({
     account: '',
     password: ''
   }),
   computed: {
-    ...mapGetters({
-      jwttoken1: 'jwtToken',
-      subject: 'subject',
-      baseUrl: 'baseUrl'
-    })
+    ...mapGetters(['jwtToken'])
   },
   methods: {
     closeLogon() {
@@ -54,7 +50,7 @@ export default {
       //  credential: this.passowrd
       //});
       console.log(this.$store);
-      //console.log(this.jwttoken1);
+      console.log(this.jwtToken);
       //this.$http.get(this.$httpUrl('authenticate.do'), options).then(function(response) {
       //  console.log(response);
       //}, function(response) {
