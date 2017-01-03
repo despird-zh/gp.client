@@ -1,13 +1,7 @@
-import { mapGetters } from 'vuex';
+
 
 export default {
-  computed: {
-    ...mapGetters([
-      'jwttoken',
-      'subject',
-      'baseUrl'
-    ])
-  },
+
   methods: {
     $httpOptions(options) {
 

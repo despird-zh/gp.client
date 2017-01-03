@@ -29,6 +29,7 @@
 
 <script>
 import httpOptions from '../utils/jwttoken';
+import { mapGetters } from 'vuex';
 
 export default {
   mixins: [httpOptions],
@@ -36,22 +37,29 @@ export default {
     account: '',
     password: ''
   }),
+  computed: {
+    ...mapGetters({
+      jwttoken1: 'jwtToken',
+      subject: 'subject',
+      baseUrl: 'baseUrl'
+    })
+  },
   methods: {
     closeLogon() {
       this.$refs.loginBox.close();
     },
     submitLogon() {
-      let options = this.$httpOptions({
-        account: this.account,
-        credential: this.passowrd
-      });
-
-      console.log(options);
-      this.$http.get(this.$httpUrl('authenticate.do'), options).then(function(response) {
-        console.log(response);
-      }, function(response) {
-        console.log(response);
-      });
+      //let options = this.$httpOptions({
+      //  account: this.account,
+      //  credential: this.passowrd
+      //});
+      console.log(this.$store);
+      //console.log(this.jwttoken1);
+      //this.$http.get(this.$httpUrl('authenticate.do'), options).then(function(response) {
+      //  console.log(response);
+      //}, function(response) {
+      //  console.log(response);
+      //});
     },
     showLogon() {
       this.$refs.loginBox.open();

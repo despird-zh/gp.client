@@ -1,4 +1,4 @@
-export const jwttoken = (state) => {
+export const jwtToken = (state) => {
   return state.principal.jwttoken;
 };
 
