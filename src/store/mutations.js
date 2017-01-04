@@ -9,7 +9,7 @@ export const types = {
 };
 
 export const state = {
-  baseUrl: 'http://localhost:8010/gp_svc/',
+  baseUrl: 'http://localhost:8010/gpapi/',
   authenticated: false,
   principal: {
     subject: 'dev1',

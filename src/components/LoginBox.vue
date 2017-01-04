@@ -29,7 +29,7 @@
 
 <script>
 import httpOptions from '../utils/jwttoken';
-import {mapState, mapGetters, mapActions} from 'Vuex';
+import {mapState, mapGetters, mapActions} from 'vuex';
 
 export default {
   mixins: [httpOptions],
@@ -49,8 +49,6 @@ export default {
         account: this.account,
         credential: this.password
       });
-
-      console.log(options);
 
       this.$http.post(this.$httpUrl('authenticate.do'), options).then(function(response) {
         console.log(response);

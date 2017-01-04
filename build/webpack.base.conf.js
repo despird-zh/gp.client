@@ -23,7 +23,8 @@ module.exports = {
     extensions: ['', '.js', '.vue','.scss','.theme'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
-      'vue$': 'vue/dist/vue.common.js',
+      'vue': 'vue/dist/vue.common.js',
+      'vuex': 'vuex/dist/vuex.js',
       'src': path.resolve(__dirname, '../src'),
       'assets': path.resolve(__dirname, '../src/assets'),
       'pages': path.resolve(__dirname, '../src/pages'),
