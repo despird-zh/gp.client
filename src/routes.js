@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Demo from './pages/Demo';
 import Demo1 from './pages/Demo1';
 import Demo2 from './pages/Demo2';
+import Demo3 from './pages/Demo3';
 const Personal = [];
 
 const WGroup = [];
@@ -35,6 +36,11 @@ const Extra = [
     path: '/demo2',
     name: 'Demo2',
     component: Demo2
+  },
+  {
+    path: '/demo3',
+    name: 'Demo3',
+    component: Demo3
   }
 ];
 

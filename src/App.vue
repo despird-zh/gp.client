@@ -33,6 +33,9 @@
                 <md-list-item class="md-inset">
                   <router-link exact to="/demo2">Demo2 page</router-link>
                 </md-list-item>
+                <md-list-item class="md-inset">
+                  <router-link exact to="/demo3">Demo3 page</router-link>
+                </md-list-item>
               </md-list>
             </md-list-expand>
           </md-list-item>

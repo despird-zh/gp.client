@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-box">
     <md-card class="page-box-card">
       <md-toolbar md-theme="white" class="md-dense">
         <h3 class="md-title">{{ cardTitle }}</h3>
@@ -22,9 +22,16 @@
 
 <style lang="scss">
   @import '../assets/styles/mdl-variables.scss';
+  
   .md-title {
     position: relative;
     z-index: 3;
+  }
+
+  .page-box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
   }
 
   .page-tabs {

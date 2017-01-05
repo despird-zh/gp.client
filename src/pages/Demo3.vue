@@ -1,7 +1,7 @@
 <template>
-  <page-content page-title="Demo2">
+  <page-content page-title="Demo3">
     <div class="main-content page-layout">
-      <page-box class="page-content" card-title="Flat">
+      <page-box card-title="Flat">
         <div slot="demo">
           <md-button>Default</md-button>
           <md-button class="md-primary">Primary</md-button>
@@ -10,7 +10,6 @@
           <md-button class="md-primary" disabled>Disabled</md-button>
           <md-button class="md-dense">Dense</md-button>
         </div>
-
         <div slot="code">
           <md-button>Default</md-button>
         </div>
@@ -75,10 +74,7 @@
     z-index: 1;
     display: flex;
 
-    .page-content{
-      flex-grow: 1;
-      flex-shrink: 1;
-      display: flex;
+    .page-box{
       padding-right: $gap-size;
     }
 

@@ -206,7 +206,7 @@
     }
 
     .page-rightnav{
-      flex: 0 0 320px;
+      flex: 0 0 $page-rightnav-width;
     }
   }
 
