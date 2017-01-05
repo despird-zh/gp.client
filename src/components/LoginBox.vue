@@ -37,11 +37,15 @@ export default {
     account: 'dev1',
     password: '1'
   }),
+
   computed: {
     ...mapGetters(['jwttoken', 'subject', 'audience', 'baseUrl'])
   },
+
   methods: {
+
     ...mapActions(['saveJwtToken']),
+
     closeLogon() {
       this.$refs.loginBox.close();
     },
