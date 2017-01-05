@@ -2,13 +2,90 @@
   <page-content page-title="Demo3">
     <div class="main-content page-layout">
       <page-box card-title="Flat">
-        <div slot="demo">
-          <md-button>Default</md-button>
-          <md-button class="md-primary">Primary</md-button>
-          <md-button class="md-accent">Accent</md-button>
-          <md-button class="md-warn">Warn</md-button>
-          <md-button class="md-primary" disabled>Disabled</md-button>
-          <md-button class="md-dense">Dense</md-button>
+        <div class="tab-page" slot="demo">
+          <div class="tab-page-body">
+            <md-list class="custom-list md-triple-line">
+              <md-list-item>
+                <md-avatar>
+                  <img src="https://placeimg.com/40/40/people/1" alt="People">
+                </md-avatar>
+
+                <div class="md-list-text-container">
+                  <span>Ali Connors</span>
+                  <span>Brunch this weekend?</span>
+                  <p>I'll be in your neighborhood doing errands...</p>
+                </div>
+
+                <md-button class="md-icon-button md-list-action">
+                  <md-icon class="md-primary">star</md-icon>
+                </md-button>
+
+                <md-divider class="md-inset"></md-divider>
+              </md-list-item>
+
+              <md-list-item>
+                <md-avatar>
+                  <img src="https://placeimg.com/40/40/people/6" alt="People">
+                </md-avatar>
+
+                <div class="md-list-text-container">
+                  <span>me, Scott, Jennifer</span>
+                  <span>Summer BBQ</span>
+                  <p>Wish I could come, but I'm out of town ...</p>
+                </div>
+
+                <md-button class="md-icon-button md-list-action">
+                  <md-icon>star_border</md-icon>
+                </md-button>
+
+                <md-divider class="md-inset"></md-divider>
+              </md-list-item>
+
+              <md-list-item>
+                <md-avatar>
+                  <img src="https://placeimg.com/40/40/people/5" alt="People">
+                </md-avatar>
+
+                <div class="md-list-text-container">
+                  <span>Sandra Adams</span>
+                  <span>Oui oui</span>
+                  <p>Do you have Paris recommendations ...</p>
+                </div>
+
+                <md-button class="md-icon-button md-list-action">
+                  <md-icon>star_border</md-icon>
+                </md-button>
+
+                <md-divider class="md-inset"></md-divider>
+              </md-list-item>
+
+              <md-list-item>
+                <md-avatar>
+                  <img src="https://placeimg.com/40/40/people/8" alt="People">
+                </md-avatar>
+
+                <div class="md-list-text-container">
+                  <span>Trevor Hansen</span>
+                  <span>Order confirmation</span>
+                  <p>Thank you for your recent order from ...</p>
+                </div>
+
+                <md-button class="md-icon-button md-list-action">
+                  <md-icon>star_border</md-icon>
+                </md-button>
+
+                <md-divider class="md-inset"></md-divider>
+              </md-list-item>
+            </md-list>
+          </div>
+          <div class="tab-page-toolbar">
+            <md-button class="md-fab md-warn md-mini">
+              <md-icon>save</md-icon>
+            </md-button>
+            <md-button class="md-fab md-clean md-mini">
+              <md-icon>dialpad</md-icon>
+            </md-button>
+          </div>
         </div>
         <div slot="code">
           <md-button>Default</md-button>
@@ -35,12 +112,11 @@
 
           <md-card-actions>
             <md-button class="md-fab md-warn md-mini">
-                <md-icon>save</md-icon>
-              </md-button>
-
-              <md-button class="md-fab md-clean md-mini">
-                <md-icon>dialpad</md-icon>
-              </md-button>
+              <md-icon>save</md-icon>
+            </md-button>
+            <md-button class="md-fab md-clean md-mini">
+              <md-icon>dialpad</md-icon>
+            </md-button>
             <md-button>Action</md-button>
           </md-card-actions>
         </md-card>
@@ -66,9 +142,31 @@
   </page-content>
 </template>
 
+<style lang="scss">
+.page-tabs {
+    .md-tab{
+      padding-top: 4px;
+      padding-right: 4px;
+    }
+  }
+</style>
 <style lang="scss" scoped>
   @import '../assets/styles/mdl-variables';
   
+  .tab-page{
+    display: flex;
+
+    .tab-page-body{
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+
+    .tab-page-toolbar{
+      flex: 0 0 50px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .page-layout{
     position: relative;
     z-index: 1;
