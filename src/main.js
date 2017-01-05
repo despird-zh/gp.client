@@ -6,7 +6,7 @@ import { switchTheme } from './config.js';
 import store from './store';
 
 import 'vue-material/dist/vue-material.css';
-import './assets/styles/mdl-ext.scss';
+import 'assets/styles/mdl-ext.scss';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);

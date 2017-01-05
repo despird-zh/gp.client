@@ -38,9 +38,10 @@ export default {
     password: '1'
   }),
   computed: {
-    ...mapGetters(['jwttoken', 'subject', 'baseUrl'])
+    ...mapGetters(['jwttoken', 'subject', 'audience', 'baseUrl'])
   },
   methods: {
+    ...mapActions(['saveJwtToken']),
     closeLogon() {
       this.$refs.loginBox.close();
     },
@@ -49,11 +50,17 @@ export default {
 
       let body = {
         principal: this.account,
-        credential: this.password
+        credential: this.password,
+        audience: this.audience
       };
 
       this.$http.post(this.$httpUrl('authenticate.do'), body, options).then(function(response) {
-        console.log(response);
+        let data = response.body;
+
+        if (data.meta.state === 'success') {
+          this.saveJwtToken({subject: this.account, jwttoken: data.data});
+          this.closeLogon();
+        }
       }, function(response) {
         console.log(response);
       });

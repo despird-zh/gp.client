@@ -12,14 +12,7 @@
         </div>
 
         <div slot="code">
-          <code-block lang="xml">
-            &lt;md-button&gt;Default&lt;/md-button&gt;
-            &lt;md-button class=&quot;md-primary&quot;&gt;Primary&lt;/md-button&gt;
-            &lt;md-button class=&quot;md-accent&quot;&gt;Accent&lt;/md-button&gt;
-            &lt;md-button class=&quot;md-warn&quot;&gt;Warn&lt;/md-button&gt;
-            &lt;md-button class=&quot;md-primary&quot; disabled&gt;Disabled&lt;/md-button&gt;
-            &lt;md-button class=&quot;md-dense&quot;&gt;Dense&lt;/md-button&gt;
-          </code-block>
+          <md-button>Default</md-button>
         </div>
       </page-box>
       <div class="page-rightnav">

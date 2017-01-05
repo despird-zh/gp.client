@@ -10,6 +10,7 @@ export const types = {
 
 export const state = {
   baseUrl: 'http://localhost:8010/gpapi/',
+  audience: 'gp_client',
   authenticated: false,
   principal: {
     subject: 'dev1',
