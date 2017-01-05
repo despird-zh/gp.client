@@ -45,12 +45,14 @@ export default {
       this.$refs.loginBox.close();
     },
     submitLogon() {
-      let options = this.$httpOptions({
-        account: this.account,
-        credential: this.password
-      });
+      let options = this.$httpOptions();
 
-      this.$http.post(this.$httpUrl('authenticate.do'), options).then(function(response) {
+      let body = {
+        principal: this.account,
+        credential: this.password
+      };
+
+      this.$http.post(this.$httpUrl('authenticate.do'), body, options).then(function(response) {
         console.log(response);
       }, function(response) {
         console.log(response);

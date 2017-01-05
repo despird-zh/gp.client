@@ -7,7 +7,7 @@ export default {
   methods: {
 
     $httpOptions(options) {
-      let httpOpts = { params: options};
+      let httpOpts = options ? options : {};
 
       if (this.jwttoken) {
         httpOpts['headers'] = {

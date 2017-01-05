@@ -14,7 +14,7 @@ export const state = {
   principal: {
     subject: 'dev1',
     credential: '1',
-    jwttoken: 'asdfasdf'
+    jwttoken: '__blind_token__'
   }
 };
 
