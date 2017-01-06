@@ -7,7 +7,7 @@
             <md-list class="custom-list md-triple-line">
               <md-list-item>
                 <md-avatar>
-                  <img src="https://placeimg.com/40/40/people/1" alt="People">
+                  <img src="assets/images/avatar-2.jpg" alt="People">
                 </md-avatar>
 
                 <div class="md-list-text-container">
@@ -25,7 +25,7 @@
 
               <md-list-item>
                 <md-avatar>
-                  <img src="https://placeimg.com/40/40/people/6" alt="People">
+                  <img src="assets/images/avatar-2.jpg" alt="People">
                 </md-avatar>
 
                 <div class="md-list-text-container">
@@ -43,7 +43,7 @@
 
               <md-list-item>
                 <md-avatar>
-                  <img src="https://placeimg.com/40/40/people/5" alt="People">
+                  <img src="assets/images/avatar-2.jpg" alt="People">
                 </md-avatar>
 
                 <div class="md-list-text-container">
@@ -61,7 +61,7 @@
 
               <md-list-item>
                 <md-avatar>
-                  <img src="https://placeimg.com/40/40/people/8" alt="People">
+                  <img src="assets/images/avatar-2.jpg" alt="People">
                 </md-avatar>
 
                 <div class="md-list-text-container">
@@ -143,7 +143,7 @@
 </template>
 
 <style lang="scss">
-.page-tabs {
+  .page-tabs {
     .md-tab{
       padding-top: 4px;
       padding-right: 4px;

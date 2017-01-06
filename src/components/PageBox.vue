@@ -7,7 +7,7 @@
 
       <md-card-area>
         <md-tabs md-right :md-dynamic-height="false" class="md-transparent page-tabs">
-          <md-tab md-label="牛图" md-active>
+          <md-tab md-label="Sample" md-active>
             <slot name="demo"></slot>
           </md-tab>
 
@@ -35,7 +35,7 @@
   }
 
   .page-tabs {
-    margin-top: -48px;
+    margin-top: -$tabs-nav-height;
 
     .md-tab{
       padding: $gap-size;
