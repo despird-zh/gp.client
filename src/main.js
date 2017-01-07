@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import VueResource from 'vue-resource';
-import { switchTheme } from './config.js';
+import {presetTheme, switchTheme} from './config.js';
 import store from './store';
 
 import 'vue-material/dist/vue-material.css';
@@ -20,7 +20,9 @@ import App from './App';
 const router = new VueRouter({
   routes
 });
+// preset theme of material library and customized components theme, ie SearchBox
 
+presetTheme();
 // load the main page component(root)
 let GPressMain = Vue.component('gpress-main', App);
 

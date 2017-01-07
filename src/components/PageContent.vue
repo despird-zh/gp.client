@@ -5,8 +5,9 @@
         <md-button class="md-icon-button" @click="toggleSidenav">
           <md-icon>menu</md-icon>
         </md-button>
-
+        
         <div class="md-title">{{ pageTitle }}</div>
+        <md-search-box></md-search-box>
         <div class="gp-notif-container">
           <md-button class="md-icon-button md-dense" @click="logon">
             <md-icon >email</md-icon>
