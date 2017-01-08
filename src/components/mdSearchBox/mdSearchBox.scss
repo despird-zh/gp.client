@@ -69,3 +69,16 @@
       }
     }
   }
+
+  .md-auto-width.md-menu-content{
+    width: auto;
+    
+    .md-search-setting{
+      display: block;
+    }
+
+    .md-list{
+      padding-left: 16px;
+      padding-right:16px;
+    }
+  }

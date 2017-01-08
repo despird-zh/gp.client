@@ -1,7 +1,7 @@
 <template>
   <page-content page-title="Demo2">
     <div class="main-content page-layout">
-      <page-box card-title="Flat">
+      <page-tab2-box card-title="Flat">
         <div slot="demo">
           <md-button>Default</md-button>
           <md-button class="md-primary">Primary</md-button>
@@ -14,7 +14,7 @@
         <div slot="code">
           <md-button>Default</md-button>
         </div>
-      </page-box>
+      </page-tab2-box>
       <div class="page-rightnav">
         <md-card class="md-m-b">
           <md-card-header>

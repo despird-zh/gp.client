@@ -1,0 +1,8 @@
+/**
+ * customize the library style
+**/
+.THEME_NAME {
+  .bottom-line{
+    border-bottom: 1px solid #{'BACKGROUND-CONTRAST-0.12'};
+  }
+}

@@ -1,9 +1,8 @@
 <template>
-  <page-content page-title="Demo3">
+  <page-content page-title="Demo4">
     <div class="main-content page-layout">
       <page-box card-title="Flat">
-        <div class="tab-page" slot="demo">
-          <div class="tab-page-body">
+        <div class="tab-page-body">
             <md-list class="custom-list md-triple-line">
               <md-list-item>
                 <md-avatar>
@@ -86,10 +85,6 @@
               <md-icon>dialpad</md-icon>
             </md-button>
           </div>
-        </div>
-        <div slot="code">
-          <md-button>Default</md-button>
-        </div>
       </page-box>
       <div class="page-rightnav">
         <md-card class="md-m-b">
@@ -142,18 +137,10 @@
   </page-content>
 </template>
 
-<style lang="scss">
-  .page-tabs {
-    .md-tab{
-      padding-top: 4px;
-      padding-right: 4px;
-    }
-  }
-</style>
 <style lang="scss" scoped>
   @import '../assets/styles/mdl-variables';
   
-  .tab-page{
+  .md-card-area{
     display: flex;
 
     .tab-page-body{
@@ -201,6 +188,9 @@
         return Object.keys(this.$slots);
 
       }
+    },
+    beforeDestroy: function() {
+      console.log('before destroy');
     }
   };
 </script>
