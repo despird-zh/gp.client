@@ -5,6 +5,7 @@ import Demo from './pages/Demo';
 import Demo1 from './pages/Demo1';
 import Demo2 from './pages/Demo2';
 import Demo3 from './pages/Demo3';
+import Demo4 from './pages/Demo4';
 const Personal = [];
 
 const WGroup = [];
@@ -13,14 +14,14 @@ const Square = [];
 
 const Extra = [
   {
-    path: '/',
-    name: 'Welcome',
+    path: '/home',
+    name: 'Home',
     component: Home
   },
   {
-    path: '/home',
+    path: '/',
     name: 'Welcome',
-    redirect: '/'
+    redirect: '/home'
   },
   {
     path: '/demo',
@@ -41,6 +42,11 @@ const Extra = [
     path: '/demo3',
     name: 'Demo3',
     component: Demo3
+  },
+  {
+    path: '/demo4',
+    name: 'Demo4',
+    component: Demo4
   }
 ];
 
