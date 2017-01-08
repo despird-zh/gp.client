@@ -1,9 +1,7 @@
 import Vue from 'vue';
 import VueMaterial from 'vue-material';
-//import SearchBox from './components/mdSearchBox';
 // register the vue-material components
 Vue.use(VueMaterial);
-//Vue.use(SearchBox);
 
 // define the theme setting list
 let initialTheme = () => {

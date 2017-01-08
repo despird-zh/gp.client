@@ -1,9 +1,15 @@
 .THEME_NAME {
-   &.md-search-box input {
-    color: #{'BACKGROUND-COLOR'};
-    background-color: #{'PRIMARY-COLOR-400'};
-    &:hover {
+   &.md-search-box {
+    >form>input {
+      color: #{'BACKGROUND-COLOR'};
       background-color: #{'PRIMARY-COLOR-600'};
+      &:hover {
+        background-color: #{'PRIMARY-COLOR-400'};
+      }
+      
+      &.md-search-hover{
+        background-color: #{'PRIMARY-COLOR-400'};
+      }
     }
   }
 
