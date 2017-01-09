@@ -1,5 +1,4 @@
 <template>
-  <page-content page-title="Demo3">
     <div class="main-content page-layout">
       <page-tab2-box card-title="Flat">
         <div class="tab-page" slot="demo">
@@ -139,7 +138,6 @@
         </md-whiteframe>
       </div>
     </div>
-  </page-content>
 </template>
 
 <style lang="scss">

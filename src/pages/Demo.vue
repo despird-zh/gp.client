@@ -1,5 +1,4 @@
 <template>
-  <page-content page-title="Demo">
     <div class="main-content">
       <md-card class="example-box-card">
         <md-toolbar md-theme="white" class="md-dense">
@@ -36,7 +35,6 @@
 
       </md-card>
     </div>
-  </page-content>
 </template>
 
 <style lang="scss" scoped>

@@ -1,5 +1,4 @@
 <template>
-  <page-content page-title="Demo1">
     <div class="main-content page-layout">
       <div class="page-content">
       <md-toolbar class="page-toolbar md-transparent">
@@ -180,7 +179,6 @@
         </md-whiteframe>
       </div>
     </div>
-  </page-content>
 </template>
 
 <style lang="scss" scoped>
