@@ -28,7 +28,7 @@
 <style lang="scss" src="./mdSearchBox.scss"></style>
 
 <script>
-  import themeMixin from '../../utils/thememixin';
+  import themeMixin from '../../utils/ThemeMixin';
   export default {
     mixins: [themeMixin],
     data: () => ({

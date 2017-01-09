@@ -136,7 +136,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/mdl-variables';
+  @import '../../assets/styles/mdl-variables';
   
   .md-card-area{
     display: flex;
@@ -171,7 +171,9 @@
 </style>
 
 <script>
+  import routePage from '../common/RoutePage';
   export default {
+    mixins: [ routePage ],
     data: function() {
       return {
         initialValue: 'Demo2 Value'
@@ -183,16 +185,10 @@
     computed: {
       slotNames() {
         return Object.keys(this.$slots);
-
       }
     },
     beforeDestroy: function() {
       console.log('before destroy');
-    },
-    mounted() {
-
-      document.title = this.pageTitle + ' - Vue Material';
-      this.$root.closeSidenav();
     }
   };
 </script>

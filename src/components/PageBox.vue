@@ -2,7 +2,8 @@
   <div class="page-box">
     <md-card class="page-box-card">
       <md-toolbar class="md-dense bottom-line md-transparent">
-        <h3 class="md-title">{{ cardTitle }}</h3>
+        <md-filter-box></md-filter-box>
+        <div class="md-spacer"></div>
         <md-menu>
           <md-button md-menu-trigger>
             Bottom <md-icon class="md-primary">keyboard_arrow_down</md-icon>

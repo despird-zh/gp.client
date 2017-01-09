@@ -28,7 +28,7 @@
 </style>
 
 <script>
-import httpOptions from '../utils/jwttoken';
+import httpOptions from '../utils/JwtToken';
 import {mapState, mapGetters, mapActions} from 'vuex';
 
 export default {

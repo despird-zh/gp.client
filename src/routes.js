@@ -5,7 +5,7 @@ import Demo from './pages/Demo';
 import Demo1 from './pages/Demo1';
 import Demo2 from './pages/Demo2';
 import Demo3 from './pages/Demo3';
-import Demo4 from './pages/Demo4';
+import Demo4 from './pages/demo4/Demo4';
 const Personal = [];
 
 const WGroup = [];
