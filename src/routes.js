@@ -1,11 +1,11 @@
 // this file define all the routing information
 import Error404 from './pages/Error';
 import Home from './pages/Home';
-import Demo from './pages/Demo';
-import Demo1 from './pages/Demo1';
-import Demo2 from './pages/Demo2';
-import Demo3 from './pages/Demo3';
-import Demo4 from './pages/Demo4';
+//import Demo from './pages/Demo';
+//import Demo1 from './pages/Demo1';
+//import Demo2 from './pages/Demo2';
+//import Demo3 from './pages/Demo3';
+//import Demo4 from './pages/Demo4';
 const Personal = [];
 
 const WGroup = [];
@@ -22,7 +22,7 @@ const Extra = [
     path: '/',
     name: 'Welcome',
     redirect: '/home'
-  },
+  }/*,
   {
     path: '/demo',
     name: 'Demo',
@@ -47,7 +47,7 @@ const Extra = [
     path: '/demo4',
     name: 'Demo4',
     component: Demo4
-  }
+  }*/
 ];
 
 export default [].concat(Personal, WGroup, Square, Extra);

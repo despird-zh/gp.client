@@ -1,8 +1,19 @@
 <template>
   <div class="page-box">
     <md-card class="page-box-card">
-      <md-toolbar md-theme="white" class="md-dense bottom-line">
+      <md-toolbar class="md-dense bottom-line md-transparent">
         <h3 class="md-title">{{ cardTitle }}</h3>
+        <md-menu>
+          <md-button md-menu-trigger>
+            Bottom <md-icon class="md-primary">keyboard_arrow_down</md-icon>
+          </md-button>
+
+          <md-menu-content>
+            <md-menu-item>My Item 1</md-menu-item>
+            <md-menu-item>My Item 2</md-menu-item>
+            <md-menu-item>My Item 3</md-menu-item>
+          </md-menu-content>
+        </md-menu>
       </md-toolbar>
 
       <md-card-area>
