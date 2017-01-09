@@ -51,3 +51,27 @@
     }
   }
 </style>
+
+<script>
+  export default {
+    data: function() {
+      return {
+        initialValue: 'Demo2 Value'
+      };
+    },
+    props: {
+      name: String
+    },
+    computed: {
+      slotNames() {
+        return Object.keys(this.$slots);
+
+      }
+    },
+    mounted() {
+
+      document.title = this.pageTitle + ' - Vue Material';
+      this.$root.closeSidenav();
+    }
+  };
+</script>

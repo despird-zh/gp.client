@@ -100,6 +100,11 @@
         return Object.keys(this.$slots);
 
       }
+    },
+    mounted() {
+
+      document.title = this.pageTitle + ' - Vue Material';
+      this.$root.closeSidenav();
     }
   };
 </script>
