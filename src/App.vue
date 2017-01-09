@@ -163,7 +163,6 @@
           <md-button class="md-icon-button" @click="toggleSidenav">
             <md-icon>menu</md-icon>
           </md-button>
-          
           <div class="md-title">{{ pageTitle }}</div>
           <md-search-box></md-search-box>
           <div class="gp-notif-container">
@@ -180,9 +179,9 @@
               <md-icon>more_vert</md-icon>
             </md-button>
           </div>
-
         </md-toolbar>
       </md-whiteframe>
+      
       <transition name="md-router" appear>
         <router-view></router-view>
       </transition>
