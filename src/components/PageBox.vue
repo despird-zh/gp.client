@@ -2,6 +2,9 @@
   <div class="page-box">
     <md-card class="page-box-card">
       <md-toolbar class="md-dense bottom-line md-transparent">
+         <md-button class="md-icon-button md-dense">
+          <md-icon>more_vert</md-icon>
+        </md-button>
         <md-filter-box></md-filter-box>
         <div class="md-spacer"></div>
         <md-menu>

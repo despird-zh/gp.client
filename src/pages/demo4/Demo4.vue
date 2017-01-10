@@ -77,10 +77,10 @@
             </md-list>
           </div>
           <div class="tab-page-toolbar">
-            <md-button class="md-fab md-warn md-mini">
+            <md-button class="md-fab md-xmini md-primary">
               <md-icon>save</md-icon>
             </md-button>
-            <md-button class="md-fab md-clean md-mini">
+            <md-button class="md-fab md-xmini md-clean">
               <md-icon>dialpad</md-icon>
             </md-button>
           </div>
@@ -105,10 +105,21 @@
           </md-card-content>
 
           <md-card-actions>
-            <md-button class="md-fab md-warn md-mini">
+            <md-button class="md-icon-button md-dense md-primary">
               <md-icon>save</md-icon>
             </md-button>
-            <md-button class="md-fab md-clean md-mini">
+            <md-button class="md-icon-button md-primary">
+              <md-icon>more_vert</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button md-accent">
+              <md-icon>more_vert</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button md-warn">
+              <md-icon>more_vert</md-icon>
+            </md-button>
+            <md-button class="md-fab md-clean md-xmini">
               <md-icon>dialpad</md-icon>
             </md-button>
             <md-button>Action</md-button>

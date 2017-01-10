@@ -27,15 +27,13 @@
         flex-grow: 1;
         outline: none;
         border: none;
-        font-size: 16px;
+        font-size: 14px;
         color: #FFFFFF;
         background-color: #78909C;
         padding: 0 8px 0 8px;
         height: 36px;
         line-height: 36px; /* TODO: This was recommended for cross browser compatability of input height, check if its actually needed in modern browsers */
-        border-radius: 5px 5px 5px 5px;
-        -moz-border-radius: 5px 5px 5px 5px;
-        -webkit-border-radius: 5px 5px 5px 5px;
+        
         &::-webkit-input-placeholder { /* WebKit browsers */
           color:    #FFFFFF;
         }
