@@ -1,0 +1,47 @@
+@import './mdl-variables.scss';
+
+.md-tabs {
+  .md-tabs-navigation {
+    height: $tabs-nav-height;
+    min-height: $tabs-nav-height;
+  }
+}
+.md-input-container {
+    margin-bottom: $gap-size;
+}
+
+.md-list.md-triple-line .md-list-item .md-avatar.md-xdense,
+.md-avatar.md-xdense {
+    width: $dense-avatar-size;
+    min-width: $dense-avatar-size;
+    height: $dense-avatar-size;
+    min-height: $dense-avatar-size;
+}
+
+.md-icon-button.md-dense i {
+  font-size: 21px;
+}
+
+.md-button.md-fab.md-xmini {
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+    line-height: 32px;
+    > i {
+      font-size: 21px;
+    }
+}
+
+.md-m-b{
+    margin-bottom: $gap-size;
+}
+
+.md-p{
+  padding: $gap-size;
+}
+
+.md-spacer{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+}
