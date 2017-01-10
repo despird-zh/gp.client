@@ -1,0 +1,27 @@
+.THEME_NAME {
+   &.md-filter-box {
+    >form>input {
+      color: #{'BACKGROUND-CONTRAST'};
+      background-color: #{'BACKGROUND-COLOR'};
+      border: 1px solid #{'BACKGROUND-CONTRAST-0.12'};
+
+      &:hover,
+      &:focus {
+        background-color: rgba(#ddd, .2);
+      }
+    }
+  }
+
+  &.md-filter-box input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #{'BACKGROUND-CONTRAST'};
+  }
+  &.md-filter-box input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #{'BACKGROUND-CONTRAST'};
+  }
+  &.md-filter-box input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:   #{'BACKGROUND-CONTRAST'};
+  }
+  &.md-filter-box input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #{'BACKGROUND-CONTRAST'};
+  }
+}
