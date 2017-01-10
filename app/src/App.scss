@@ -123,7 +123,7 @@
     z-index: 1;
     transform: translate3D(100%, 0, 0);
     transition: $swift-ease-in;
-    transition-duration: .25s;
+    transition-duration: .2s;
   }
 
   .md-router-enter{
@@ -135,7 +135,7 @@
     z-index: 2;
     transform: translate3D(0, 0, 0);
     transition: $swift-ease-out;
-    transition-duration: .2s;
+    transition-duration: .25s;
   }
 
   .page-content {
