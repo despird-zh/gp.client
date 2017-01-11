@@ -46,6 +46,8 @@ let deleteFolderRecursive = function(path) {
         fs.rmdirSync(path);
     }
 };
+process.stdout.write('\n\n Deleting ' + appPath );
 deleteFolderRecursive(appPath);
+process.stdout.write('\n Done cleaning ' + appPath + '\n\n');
 // build the output of app
 webpack(webpackConfig, done);
