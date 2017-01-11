@@ -76,6 +76,9 @@
 </style>
 
 <script>
+
+  //import ChartJS from 'chart.js/dist/Chart';
+
   export default {
     data: function() {
       return {
