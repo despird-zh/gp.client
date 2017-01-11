@@ -1,6 +1,6 @@
 // this file define all the routing information
 import Error404 from './pages/Error';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import Demo from './pages/Demo';
 import Demo1 from './pages/Demo1';
 import Demo2 from './pages/Demo2';
