@@ -53,7 +53,9 @@
 </style>
 
 <script>
+  import routePage from './common/RoutePage';
   export default {
+    mixins: [routePage],
     data: function() {
       return {
         initialValue: 'Demo2 Value'
@@ -67,10 +69,6 @@
         return Object.keys(this.$slots);
 
       }
-    },
-    mounted() {
-
-      document.title = this.pageTitle + ' - Vue Material';
     }
   };
 </script>

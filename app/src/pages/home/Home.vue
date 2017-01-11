@@ -1,6 +1,10 @@
 <template>
     <div class="main-content">
-      <div class="introduction">
+
+      <div class="dashboard">
+        <md-whiteframe md-elevation="2">
+          
+        </md-whiteframe>
         <div class="button-actions">
           <div class="example">
             <img src="assets/images/vue-material-example.png" alt="Material Design">
@@ -27,9 +31,11 @@
 </template>
 
 <style lang="scss" scoped>
-  .introduction {
+
+  .dashboard {
     max-width: 960px;
     margin: 0 auto;
+
   }
 
   .example {
@@ -77,8 +83,9 @@
 <script>
 
   import BarChart from './BarChart';
-
+  import routePage from '../common/RoutePage';
   export default {
+    mixins: [routePage],
     components: { BarChart },
     data: function() {
       return {
@@ -93,11 +100,6 @@
         return Object.keys(this.$slots);
 
       }
-    },
-    mounted() {
-
-      document.title = this.pageTitle + ' - Vue Material';
-      this.$root.closeSidenav();
     }
   };
 </script>
