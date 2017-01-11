@@ -10,8 +10,8 @@
     "lint": "eslint --ext .js,.vue --fix app/src"
   },
   "dependencies": {
-    "chart.js": "^2.4.0",
     "vue": "^2.1.8",
+    "vue-chartjs": "^2.3.2",
     "vue-material": "^0.6.3",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.3",

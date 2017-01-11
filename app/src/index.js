@@ -35,3 +35,17 @@ GPressMain = new GPressMain({
 GPressMain.connect();
 // set default theme of whole page
 switchTheme('default');
+// register the routing event
+router.beforeEach((to, from, next) => {
+  Vue.nextTick(() => {
+    let mainContent = document.querySelector('.main-content');
+
+    if (mainContent) {
+      mainContent.scrollTop = 0;
+    }
+
+    GPressMain.closeSidenav();
+
+    next();
+  });
+});

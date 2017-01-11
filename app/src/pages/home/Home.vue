@@ -9,8 +9,7 @@
 
         <div class="row">
           <div class="column">
-            <h2 class="md-headline">Material Design</h2>
-            <p>Vue Material is lightweight framework built exactly according to the <a href="http://material.google.com" target="_blank" rel="noopener">Material Design</a> specs. Build powerful and well-designed web apps that can can fit on every screen.</p>
+            <bar-chart></bar-chart>
           </div>
 
           <div class="column">
@@ -77,9 +76,10 @@
 
 <script>
 
-  //import ChartJS from 'chart.js/dist/Chart';
+  import BarChart from './BarChart';
 
   export default {
+    components: { BarChart },
     data: function() {
       return {
         initialValue: 'Demo2 Value'

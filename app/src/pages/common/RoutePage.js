@@ -7,6 +7,5 @@ export default {
 
     document.title = pageName + ' - Vue Material';
     this.$root.pageTitle = pageName;
-    this.$root.closeSidenav();
   }
 };
