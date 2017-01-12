@@ -44,7 +44,9 @@
   .page-box-card {
     position: relative;
     overflow: hidden;
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
     > .md-card-area{
       padding: $gap-size;
       display: flex;

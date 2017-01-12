@@ -2,35 +2,35 @@
     <div class="main-content page-layout">
       <page-box>
         <div class="tab-page-body">
-            <md-list class="custom-list md-triple-line md-dense">
-              <md-list-item>
-                <md-avatar class="md-xdense">
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
+          <md-list class="custom-list md-triple-line md-dense">
+            <md-list-item>
+              <md-avatar class="md-xdense">
+                <img src="assets/images/avatar-2.jpg" alt="People">
+              </md-avatar>
 
-                <div class="md-list-text-container">
-                  <span>Ali Connors</span>
-                  <span>Brunch this weekend?</span>
-                  <p>I'll be in your neighborhood doing errands...</p>
-                </div>
+              <div class="md-list-text-container">
+                <span>Ali Connors</span>
+                <span>Brunch this weekend?</span>
+                <p>I'll be in your neighborhood doing errands...</p>
+              </div>
 
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon class="md-primary">star</md-icon>
-                </md-button>
+              <md-button class="md-icon-button md-list-action">
+                <md-icon class="md-primary">star</md-icon>
+              </md-button>
 
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
+              <md-divider class="md-inset"></md-divider>
+            </md-list-item>
 
-            </md-list>
-          </div>
-          <div class="tab-page-toolbar">
-            <md-button class="md-fab md-xmini md-primary">
-              <md-icon>save</md-icon>
-            </md-button>
-            <md-button class="md-fab md-xmini md-clean">
-              <md-icon>dialpad</md-icon>
-            </md-button>
-          </div>
+          </md-list>
+        </div>
+        <div class="tab-page-toolbar">
+          <md-button class="md-fab md-xmini md-primary">
+            <md-icon>save</md-icon>
+          </md-button>
+          <md-button class="md-fab md-xmini md-clean">
+            <md-icon>dialpad</md-icon>
+          </md-button>
+        </div>
       </page-box>
       <div class="page-rightnav">
         <md-card class="md-m-b">
