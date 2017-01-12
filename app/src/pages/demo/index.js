@@ -7,7 +7,7 @@ import Demo2 from './Demo2';
 import Demo3 from './Demo3';
 import Demo4 from './demo4/Demo4';
 
-const Routes = [
+const ModuleRoutes = [
   {
     path: '/demo',
     name: 'Demo',
@@ -35,4 +35,7 @@ const Routes = [
   }
 ];
 
-export default Routes;
+export default {
+  name: 'DemoPages',
+  routes: ModuleRoutes
+};

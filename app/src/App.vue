@@ -202,8 +202,6 @@
   export default {
     data() {
       return {
-        toolbar: true,
-        theme: 'default',
         pageTitle: '',
         embedSidenav: false
       };
@@ -232,10 +230,10 @@
       },
       closeSidenav() {
         this.$refs['main-sidebar'].close();
-      },
-      connect() {
-        console.log('try to connect');
       }
+    },
+    mounted: function() {
+      console.log(this.modules);
     }
   };
 </script>

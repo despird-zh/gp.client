@@ -4,7 +4,8 @@
 import SquareHome from './home/SquareHome';
 import SquareTopic from './topic/SquareTopic';
 
-const Routes = [
+const ModuleName = 'Sequare';
+const ModuleRoutes = [
   {
     path: '/square-home',
     name: 'Square Home',
@@ -17,4 +18,7 @@ const Routes = [
   }
 ];
 
-export default Routes;
+export default {
+  name: ModuleName,
+  routes: ModuleRoutes
+};
