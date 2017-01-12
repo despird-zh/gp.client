@@ -39,17 +39,16 @@
     flex-grow: 1;
     flex-shrink: 1;
     display: flex;
-
-    .md-card-area{
-      padding: $gap-size;
-      display: flex;
-    }
   }
 
   .page-box-card {
     position: relative;
     overflow: hidden;
     flex: 1;
+    > .md-card-area{
+      padding: $gap-size;
+      display: flex;
+    }
   }
 </style>
 

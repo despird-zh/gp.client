@@ -1,5 +1,4 @@
 <template>
-  <page-content page-title="Error">
     <div class="main-content">
       <section>
         <h2 class="md-headline">Hmmm. Too bad</h2>
@@ -8,7 +7,6 @@
         <md-button class="md-primary md-raised" href="https://github.com/marcosmoura/vue-material/issues/new" target="_blank" rel="noopener">New Issue</md-button>
       </section>
     </div>
-  </page-content>
 </template>
 
 <style lang="scss" scoped>

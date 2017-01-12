@@ -1,6 +1,5 @@
 <template>
     <div class="main-content">
-
       <div class="dashboard">
         <md-whiteframe class="summary" md-elevation="1">
           <div class="md-spacer stats">
@@ -26,11 +25,9 @@
             </div>
           </div>
         </md-whiteframe>
-
-
         <div class="row">
           <div class="column">
-            <md-card class="card-example">
+            <md-card>
               <md-toolbar class="md-dense bottom-line md-transparent">
                 <h3 class="md-subheading">Test Title</h3>
               </md-toolbar>
@@ -130,7 +127,7 @@
           </div>
 
           <div class="column">
-            <md-card class="card-example">
+            <md-card>
               <md-toolbar class="md-dense bottom-line md-transparent">
                 <h3 class="md-subheading">Top Groups</h3>
               </md-toolbar>
@@ -257,33 +254,7 @@
       }
     }
   }
-
-  .example {
-    margin-bottom: 24px;
-    overflow: hidden;
-
-    img {
-      margin: -45px auto;
-      display: block;
-    }
-  }
-
-  .button-actions {
-    margin-bottom: 16px;
-    text-align: center;
-
-    .introduction {
-      margin-bottom: .8em;
-      font-size: 20px;
-      line-height: 1.6em;
-    }
-
-    .md-button {
-      margin-left: 0;
-      color: #fff !important;
-    }
-  }
-
+  
   .row {
     margin: 20px -10px 10px;
     display: flex;

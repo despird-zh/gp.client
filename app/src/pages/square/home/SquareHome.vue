@@ -1,6 +1,6 @@
 <template>
     <div class="main-content page-layout">
-      <page-box card-title="Flat">
+      <page-box>
         <div class="tab-page-body">
             <md-list class="custom-list md-triple-line md-dense">
               <md-list-item>
@@ -95,31 +95,28 @@
 
 <style lang="scss" scoped>
   @import '../../../assets/styles/mdl-variables';
-  
-  .md-card-area{
-    display: flex;
 
-    .tab-page-body{
-      flex-grow: 1;
-      flex-shrink: 1;
-
-      .custom-list{
-        padding: 0;
-      }
-    }
-
-    .tab-page-toolbar{
-      flex: 0 0 50px;
-      display: flex;
-      flex-direction: column;
-    }
-  }
   .page-layout{
 
     display: flex;
 
     .page-box{
       padding-right: $gap-size;
+
+      .tab-page-body{
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        .custom-list{
+          padding: 0;
+        }
+      }
+
+      .tab-page-toolbar{
+        flex: 0 0 50px;
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .page-rightnav{

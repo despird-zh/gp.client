@@ -11,7 +11,7 @@
       <div class="main-sidebar-links">
         <md-list class="md-dense">
           <md-list-item>
-            <router-link exact to="/">Introduction</router-link>
+            <router-link exact to="/home">Introduction</router-link>
           </md-list-item>
           <md-list-item>
             <router-link exact to="/getting-started">Getting Started</router-link>
