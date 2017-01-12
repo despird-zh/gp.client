@@ -13,7 +13,7 @@ Vue.use(VueResource);
 // initialize the common components
 import './components/index.js';
 // initialize the definition of route setting.
-import routes from './routes.js';
+import routes from './pages/routes.js';
 // initialize the application main entrance
 import App from './App';
 // initialize the routing information

@@ -21,59 +21,6 @@
                 <md-divider class="md-inset"></md-divider>
               </md-list-item>
 
-              <md-list-item>
-                <md-avatar class="md-xdense">
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
-
-                <div class="md-list-text-container">
-                  <span>me, Scott, Jennifer</span>
-                  <span>Summer BBQ</span>
-                  <p>Wish I could come, but I'm out of town ...</p>
-                </div>
-
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon>star_border</md-icon>
-                </md-button>
-
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
-
-              <md-list-item>
-                <md-avatar class="md-xdense">
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
-
-                <div class="md-list-text-container">
-                  <span>Sandra Adams</span>
-                  <span>Oui oui</span>
-                  <p>Do you have Paris recommendations ...</p>
-                </div>
-
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon>star_border</md-icon>
-                </md-button>
-
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
-
-              <md-list-item>
-                <md-avatar class="md-xdense">
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
-
-                <div class="md-list-text-container">
-                  <span>Trevor Hansen</span>
-                  <span>Order confirmation</span>
-                  <p>Thank you for your recent order from ...</p>
-                </div>
-
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon>star_border</md-icon>
-                </md-button>
-
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
             </md-list>
           </div>
           <div class="tab-page-toolbar">
@@ -147,7 +94,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '../../assets/styles/mdl-variables';
+  @import '../../../assets/styles/mdl-variables';
   
   .md-card-area{
     display: flex;
@@ -186,7 +133,7 @@
 </style>
 
 <script>
-  import routePage from '../common/RoutePage';
+  import routePage from '../../common/RoutePage';
   export default {
     mixins: [ routePage ],
     data: function() {
@@ -196,11 +143,6 @@
     },
     props: {
       name: String
-    },
-    computed: {
-      slotNames() {
-        return Object.keys(this.$slots);
-      }
     },
     beforeDestroy: function() {
       console.log('before destroy');

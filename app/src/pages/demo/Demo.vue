@@ -53,7 +53,7 @@
 </style>
 
 <script>
-  import routePage from './common/RoutePage';
+  import routePage from '../common/RoutePage';
   export default {
     mixins: [routePage],
     data: function() {

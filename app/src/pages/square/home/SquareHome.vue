@@ -1,11 +1,10 @@
 <template>
     <div class="main-content page-layout">
-      <page-tab2-box card-title="Flat">
-        <div class="tab-page" slot="demo">
-          <div class="tab-page-body">
-            <md-list class="custom-list md-triple-line">
+      <page-box card-title="Flat">
+        <div class="tab-page-body">
+            <md-list class="custom-list md-triple-line md-dense">
               <md-list-item>
-                <md-avatar>
+                <md-avatar class="md-xdense">
                   <img src="assets/images/avatar-2.jpg" alt="People">
                 </md-avatar>
 
@@ -22,74 +21,17 @@
                 <md-divider class="md-inset"></md-divider>
               </md-list-item>
 
-              <md-list-item>
-                <md-avatar>
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
-
-                <div class="md-list-text-container">
-                  <span>me, Scott, Jennifer</span>
-                  <span>Summer BBQ</span>
-                  <p>Wish I could come, but I'm out of town ...</p>
-                </div>
-
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon>star_border</md-icon>
-                </md-button>
-
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
-
-              <md-list-item>
-                <md-avatar>
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
-
-                <div class="md-list-text-container">
-                  <span>Sandra Adams</span>
-                  <span>Oui oui</span>
-                  <p>Do you have Paris recommendations ...</p>
-                </div>
-
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon>star_border</md-icon>
-                </md-button>
-
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
-
-              <md-list-item>
-                <md-avatar>
-                  <img src="assets/images/avatar-2.jpg" alt="People">
-                </md-avatar>
-
-                <div class="md-list-text-container">
-                  <span>Trevor Hansen</span>
-                  <span>Order confirmation</span>
-                  <p>Thank you for your recent order from ...</p>
-                </div>
-
-                <md-button class="md-icon-button md-list-action">
-                  <md-icon>star_border</md-icon>
-                </md-button>
-
-                <md-divider class="md-inset"></md-divider>
-              </md-list-item>
             </md-list>
           </div>
           <div class="tab-page-toolbar">
-            <md-button class="md-fab md-warn md-mini">
+            <md-button class="md-fab md-xmini md-primary">
               <md-icon>save</md-icon>
             </md-button>
-            <md-button class="md-fab md-clean md-mini">
+            <md-button class="md-fab md-xmini md-clean">
               <md-icon>dialpad</md-icon>
             </md-button>
           </div>
-        </div>
-        <div slot="code">
-          <md-button>Default</md-button>
-        </div>
-      </page-tab2-box>
+      </page-box>
       <div class="page-rightnav">
         <md-card class="md-m-b">
           <md-card-header>
@@ -110,10 +52,21 @@
           </md-card-content>
 
           <md-card-actions>
-            <md-button class="md-fab md-warn md-mini">
+            <md-button class="md-icon-button md-dense md-primary">
               <md-icon>save</md-icon>
             </md-button>
-            <md-button class="md-fab md-clean md-mini">
+            <md-button class="md-icon-button md-primary">
+              <md-icon>more_vert</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button md-accent">
+              <md-icon>more_vert</md-icon>
+            </md-button>
+
+            <md-button class="md-icon-button md-warn">
+              <md-icon>more_vert</md-icon>
+            </md-button>
+            <md-button class="md-fab md-clean md-xmini">
               <md-icon>dialpad</md-icon>
             </md-button>
             <md-button>Action</md-button>
@@ -140,23 +93,19 @@
     </div>
 </template>
 
-<style lang="scss">
-  .page-tabs {
-    .md-tab{
-      padding-top: 4px;
-      padding-right: 4px;
-    }
-  }
-</style>
 <style lang="scss" scoped>
-  @import '../assets/styles/mdl-variables';
+  @import '../../../assets/styles/mdl-variables';
   
-  .tab-page{
+  .md-card-area{
     display: flex;
 
     .tab-page-body{
       flex-grow: 1;
       flex-shrink: 1;
+
+      .custom-list{
+        padding: 0;
+      }
     }
 
     .tab-page-toolbar{
@@ -184,9 +133,9 @@
 </style>
 
 <script>
-  import routePage from './common/RoutePage';
+  import routePage from '../../common/RoutePage';
   export default {
-    mixins: [routePage],
+    mixins: [ routePage ],
     data: function() {
       return {
         initialValue: 'Demo2 Value'
@@ -195,11 +144,8 @@
     props: {
       name: String
     },
-    computed: {
-      slotNames() {
-        return Object.keys(this.$slots);
-
-      }
+    beforeDestroy: function() {
+      console.log('before destroy');
     }
   };
 </script>

@@ -66,7 +66,7 @@
 </template>
 
 <style lang="scss" scoped>
-  @import '../assets/styles/mdl-variables';
+  @import '../../assets/styles/mdl-variables';
   
   .page-layout{
     display: flex;
@@ -86,7 +86,7 @@
 </style>
 
 <script>
-  import routePage from './common/RoutePage';
+  import routePage from '../common/RoutePage';
   export default {
     mixins: [routePage],
     data: function() {
