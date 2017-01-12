@@ -13,131 +13,15 @@
           <md-list-item>
             <router-link exact to="/">Introduction</router-link>
           </md-list-item>
-
           <md-list-item>
             <router-link exact to="/getting-started">Getting Started</router-link>
           </md-list-item>
-
-          <md-list-item>
-            <span>Demo Pages</span>
+          <md-list-item v-for="module in modules">
+            <span>{{ module.name }}</span>
             <md-list-expand>
               <md-list>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/demo">demo</router-link>
-                </md-list-item>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/demo1">Demo1 page</router-link>
-                </md-list-item>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/demo2">Demo2 page</router-link>
-                </md-list-item>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/demo3">Demo3 page</router-link>
-                </md-list-item>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/demo4">Demo4 page</router-link>
-                </md-list-item>
-              </md-list>
-            </md-list-expand>
-          </md-list-item>
-          <md-list-item>
-            <span>Components</span>
-            <md-list-expand>
-              <md-list>
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/avatar">Avatar</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/bottom-bar">Bottom Bar</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/button">Button</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/button-toggle">Button Toggle</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/card">Card</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/checkbox">Checkbox</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/dialog">Dialog</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/icon">Icon</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/input">Input</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/list">List</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/menu">Menu</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/radio">Radio</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/ink-ripple">Ink Ripple</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/select">Select</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/sidenav">Sidenav</router-link>
-                </md-list-item>
-
-                <!-- <md-list-item class="md-inset">
-                  <router-link exact to="/components/snackbar">Snackbar</router-link>
-                </md-list-item> -->
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/spinner">Spinner</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/subheader">Subheader</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/switch">Switch</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/tabs">Tabs</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/table">Table</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/toolbar">Toolbar</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/tooltip">Tooltip</router-link>
-                </md-list-item>
-
-                <md-list-item class="md-inset">
-                  <router-link exact to="/components/whiteframe">Whiteframe</router-link>
+                <md-list-item class="md-inset" v-for="route in module.routes">
+                  <router-link exact :to=route.path > {{ route.name }}</router-link>
                 </md-list-item>
               </md-list>
             </md-list-expand>
@@ -198,6 +82,7 @@
 
 <script>
   import Vue from 'vue';
+  import { modules } from './pages/routes.js';
 
   export default {
     data() {
@@ -209,6 +94,9 @@
     computed: {
       logo() {
         return 'assets/images/logo-vue-material-' + Vue.material.currentTheme + '.png';
+      },
+      modules() {
+        return modules;
       }
     },
     methods: {
@@ -225,7 +113,6 @@
         }
 
         this.embedSidenav = false;
-
         this.$refs['main-sidebar'].toggle();
       },
       closeSidenav() {
@@ -233,7 +120,7 @@
       }
     },
     mounted: function() {
-      console.log(this.modules);
+      console.log(modules);
     }
   };
 </script>

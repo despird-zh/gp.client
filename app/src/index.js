@@ -13,7 +13,7 @@ Vue.use(VueResource);
 // initialize the common components
 import './components/index.js';
 // initialize the definition of route setting.
-import {modules, routes } from './pages/routes.js';
+import { routes } from './pages/routes.js';
 // initialize the application main entrance
 import App from './App';
 // initialize the routing information
@@ -30,8 +30,7 @@ let GPressMain = Vue.component('gpress-main', App);
 GPressMain = new GPressMain({
   el: '#gpress-main',
   store,
-  router,
-  modules
+  router
 });
 
 // set default theme of whole page
