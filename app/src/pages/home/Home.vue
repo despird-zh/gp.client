@@ -52,8 +52,8 @@
                   <md-icon>more_vert</md-icon>
                 </md-button>
               </md-toolbar>
-              <md-card-content class="md-p">
-                <md-list class="custom-list md-triple-line md-dense">
+              <md-card-content class="md-p-none">
+                <md-list class="custom-list md-triple-line md-dense md-p-none">
                   <md-list-item>
                     <md-avatar>
                       <img src="https://placeimg.com/40/40/people/1" alt="People">
@@ -62,7 +62,6 @@
                     <div class="md-list-text-container">
                       <span>Ali Connors</span>
                       <span>Brunch this weekend?</span>
-                      <p>I'll be in your neighborhood doing errands...</p>
                     </div>
 
                     <md-button class="md-icon-button md-list-action">
@@ -135,8 +134,8 @@
               <md-toolbar class="md-dense bottom-line md-transparent">
                 <h3 class="md-subheading">Top Groups</h3>
               </md-toolbar>
-              <md-card-content class="md-p">
-                <md-list class="custom-list md-triple-line md-dense">
+              <md-card-content class="md-p-none">
+                <md-list class="custom-list md-triple-line md-dense md-p-none">
                   <md-list-item>
                     <md-avatar>
                       <img src="https://placeimg.com/40/40/people/1" alt="People">
@@ -228,6 +227,7 @@
     margin: 0 auto;
      
     .summary{
+      margin-top: 10px;
       display: flex;
       padding: 10px;
 
@@ -236,6 +236,7 @@
         background-image: url('/assets/images/sum-stats-bg.jpg');
         background-position: center;
         background-repeat: no-repeat;
+
         .transbox
         {
           width: 100%;
@@ -284,7 +285,7 @@
   }
 
   .row {
-    margin: 15px -10px 10px;
+    margin: 20px -10px 10px;
     display: flex;
     flex-flow: row wrap;
   }

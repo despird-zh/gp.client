@@ -37,7 +37,11 @@
 }
 
 .md-p{
-  padding: $gap-size;
+  padding: $gap-size !important;
+}
+
+.md-p-none{
+  padding: 0 !important;
 }
 
 .md-spacer{

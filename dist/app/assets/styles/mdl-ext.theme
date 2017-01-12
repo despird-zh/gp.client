@@ -5,4 +5,7 @@
   .bottom-line{
     border-bottom: 1px solid #{'BACKGROUND-CONTRAST-0.12'};
   }
+  .bg-color{
+    color: #{'BACKGROUND-COLOR'};
+  }
 }

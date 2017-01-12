@@ -185,6 +185,9 @@
       <transition name="md-router" appear>
         <router-view></router-view>
       </transition>
+      <md-whiteframe md-elevation="2" class="page-footer">
+        <span>© 2017</span> <span> Blalala</span>
+      </md-whiteframe>
     </div>
     
     <login-box ref="logon-box"></login-box>

@@ -108,7 +108,7 @@
   }
 
   .main-content {
-    padding: 12px;
+    padding: $gap-size;
     flex: 1;
     overflow: auto;
     background-color: #fff;
@@ -143,7 +143,14 @@
     max-height: 100%;
     flex: 1;
     display: flex;
-    flex-flow: column
+    flex-flow: column;
+
+    .page-footer{
+      padding: $gap-size;
+      height: $page-footer-height;
+      min-height: $page-footer-height;
+      max-height: $page-footer-height;
+    }
   }
 
   .main-header {
