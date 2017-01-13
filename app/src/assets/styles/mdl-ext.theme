@@ -8,4 +8,5 @@
   .bg-color{
     color: #{'BACKGROUND-COLOR'};
   }
+
 }
