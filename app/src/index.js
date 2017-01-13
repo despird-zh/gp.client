@@ -20,7 +20,7 @@ import App from './App';
 const router = new VueRouter({
   routes
 });
-// preset theme of material library and customized components theme, ie SearchBox
+// preset theme of material library and customized components theme, i.e SearchBox etc.
 
 presetTheme();
 // load the main page component(root)

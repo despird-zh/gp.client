@@ -2,6 +2,8 @@
 import Error404 from './Error';
 import Home from './home/Home';
 import SquareModule from './square';
+import WorkspaceModule from './workspace';
+import WorkgroupModule from './workgroup';
 import DemoModule from './demo';
 
 // extra setting
@@ -29,6 +31,11 @@ const ExtraModule = {
 
 export default
 {
-  routes: [].concat(DemoModule.routes, SquareModule.routes, ExtraModule.routes),
-  modules: [DemoModule, SquareModule, ExtraModule]
+  routes: [].concat(DemoModule.routes,
+          SquareModule.routes,
+          WorkgroupModule.routes,
+          WorkspaceModule.routes,
+          ExtraModule.routes),
+
+  modules: [DemoModule, SquareModule, WorkgroupModule, WorkspaceModule, ExtraModule]
 };
