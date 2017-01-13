@@ -32,12 +32,26 @@
     }
 }
 
-.md-m-b{
-    margin-bottom: $gap-size;
+.md-m-r{
+    margin-right: $gap-size !important;
 }
-
+.md-m-b{
+    margin-bottom: $gap-size !important;
+}
 .md-p{
   padding: $gap-size !important;
+}
+
+.md-p-tb{
+  padding-top: $gap-size !important;
+  padding-bottom: $gap-size !important;
+}
+.md-p-b{
+  padding-bottom: $gap-size !important;
+}
+
+.md-p-b-none{
+  padding-bottom: 0 !important;
 }
 
 .md-p-none{

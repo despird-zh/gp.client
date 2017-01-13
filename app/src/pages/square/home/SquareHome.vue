@@ -57,7 +57,7 @@
       </div>
       <div class="page-rightnav">
         <md-card class="md-m-b">
-          <md-card-header>
+          <md-card-header class="md-p-tb">
             <md-avatar>
               <img src="assets/images/avatar.png" alt="People">
             </md-avatar>
@@ -66,51 +66,42 @@
             <div class="md-subhead">Subtitle here</div>
           </md-card-header>
 
-          <md-card-media>
-            <img src="assets/images/card-image-1.jpg" alt="People">
-          </md-card-media>
-
-          <md-card-content>
+          <md-card-content class="md-p-b-none">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea nostrum.
           </md-card-content>
 
           <md-card-actions>
-            <md-button class="md-icon-button md-dense md-primary">
+            <md-button class="md-fab md-xmini md-primary md-m-r">
               <md-icon>save</md-icon>
             </md-button>
-            <md-button class="md-icon-button md-primary">
+            <md-button class="md-fab md-primary md-xmini md-m-r">
               <md-icon>more_vert</md-icon>
             </md-button>
-
-            <md-button class="md-icon-button md-accent">
+            <md-button class="md-fab md-warn md-xmini md-m-r">
               <md-icon>more_vert</md-icon>
             </md-button>
-
-            <md-button class="md-icon-button md-warn">
-              <md-icon>more_vert</md-icon>
-            </md-button>
-            <md-button class="md-fab md-clean md-xmini">
+            <md-button class="md-fab md-clean md-xmini md-m-r">
               <md-icon>dialpad</md-icon>
             </md-button>
-            <md-button>Action</md-button>
           </md-card-actions>
+          
         </md-card>
-        <md-whiteframe md-elevation="2" class="md-m-b">
-        <md-tabs class="md-transparent">
-          <md-tab id="movies" md-label="Groups">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
-          </md-tab>
+        <md-whiteframe md-elevation="2" class="md-spacer">
+          <md-tabs class="md-transparent">
+            <md-tab id="movies" md-label="Groups">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+            </md-tab>
 
-          <md-tab id="music" md-label="Folders">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
-          </md-tab>
+            <md-tab id="music" md-label="Folders">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+            </md-tab>
 
-          <md-tab id="books" md-label="Chats">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
-          </md-tab>
+            <md-tab id="books" md-label="Chats">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
+            </md-tab>
 
-        </md-tabs>
+          </md-tabs>
         </md-whiteframe>
       </div>
     </div>
@@ -160,6 +151,8 @@
 
     .page-rightnav{
       flex: 0 0 $page-rightnav-width;
+      display: flex;
+      flex-direction: column;
     }
   }
 
