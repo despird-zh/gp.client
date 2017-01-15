@@ -9,6 +9,10 @@
             <md-tabs md-right :md-dynamic-height="true" class="md-transparent example-tabs">
             <md-tab class="example-content" md-label="Demo">
                 <div >
+                <!--md-button>
+                  {{ btnName }} <md-icon>keyboard_arrow_down</md-icon>
+                </md-button-->
+                  <filter-list :setting="filterSetting" ></filter-list>
                     <p>Tabs11111 enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.</p>
                     <p>The following classes can be applied to change the color palette:</p>
                     <ul class="md-body-2">
@@ -58,7 +62,14 @@
     mixins: [routePage],
     data: function() {
       return {
-        initialValue: 'Demo2 Value'
+        initialValue: 'Demo2 Value',
+        filterSetting: {
+          name: 'exampler',
+          items: [
+          {name: 'aaaa'},
+          {name: 'tttt'}
+          ]
+        }
       };
     },
     props: {

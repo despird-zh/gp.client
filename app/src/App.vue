@@ -11,10 +11,14 @@
       <div class="main-sidebar-links">
         <md-list class="md-dense">
           <md-list-item>
-            <router-link exact to="/home"><span><i class="material-icons">home</i>Introduction</span></router-link>
+            <router-link exact to="/home">
+              <md-icon class="md-m-r">home</md-icon><span>Introduction</span>
+            </router-link>
           </md-list-item>
           <md-list-item>
-            <router-link exact to="/getting-started">Getting Started</router-link>
+            <router-link exact to="/getting-started">
+              <md-icon class="md-m-r">move_to_inbox</md-icon><span>Inbox</span>
+            </router-link>
           </md-list-item>
           <md-list-item v-for="module in modules">
             <span>{{ module.name }}</span>

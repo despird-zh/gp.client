@@ -24,7 +24,6 @@
 
 <style lang="scss">
   @import '../assets/styles/mdl-variables.scss';
-  
 </style>
 
 <script>
