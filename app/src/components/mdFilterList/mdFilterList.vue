@@ -10,9 +10,9 @@
       {{ name }} <md-icon>keyboard_arrow_down</md-icon>
     </button>
     <md-menu-content>
-      <md-list-item v-for="item in items" v-on:click="itemClick(item.name)">
+      <md-list-item v-for="item in items" v-on:click="itemClick(item.name, 'menuitem')">
         <md-checkbox ref="checkBoxes" 
-          v-on:change="itemChange(item.name)" 
+          v-on:change="itemClick(item.name,'checkbox')" 
           :value="item.value"
           :name="item.name">{{ item.name }}</md-checkbox>
       </md-list-item>
@@ -46,28 +46,16 @@ export default {
     };
   },
   methods: {
-    itemClick(itemName) {
+    itemClick(itemName, source) {
       // here item is the component
       let checkboxItem = this.$refs['checkBoxes'].find((item) => {
         return itemName === item.name;
       });
 
-      // menu item manually toggle checked or not
-      checkboxItem.checked = !checkboxItem.checked;
-      if (checkboxItem.checked && !this.multiple) {
-        for (let cItem of this.$refs['checkBoxes']) {
-          if (cItem.name !== checkboxItem.name && cItem.checked) {
-            cItem.checked = false;
-          }
-        }
+      // menu item manually change state
+      if (source === 'menuitem') {
+        checkboxItem.checked = !checkboxItem.checked;
       }
-      this.refreshValue();
-    },
-    itemChange(itemName) {
-      // here item is the component
-      let checkboxItem = this.$refs['checkBoxes'].find((item) => {
-        return itemName === item.name;
-      });
 
       if (checkboxItem.checked && !this.multiple) {
         for (let cItem of this.$refs['checkBoxes']) {
