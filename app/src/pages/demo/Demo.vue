@@ -12,7 +12,7 @@
                 <!--md-button>
                   {{ btnName }} <md-icon>keyboard_arrow_down</md-icon>
                 </md-button-->
-                  <filter-list :setting="filterSetting" ></filter-list>
+                  <filter-list :name="filterSetting.name" :items="filterSetting.items" v-on:change="onChange"></filter-list>
                     <p>Tabs11111 enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.</p>
                     <p>The following classes can be applied to change the color palette:</p>
                     <ul class="md-body-2">
@@ -66,8 +66,8 @@
         filterSetting: {
           name: 'exampler',
           items: [
-          {name: 'aaaa'},
-          {name: 'tttt'}
+            {name: 'aaaa', value: true},
+            {name: 'tttt', value: false}
           ]
         }
       };
@@ -79,6 +79,11 @@
       slotNames() {
         return Object.keys(this.$slots);
 
+      }
+    },
+    methods: {
+      onChange(value) {
+        console.log('demo page:' + value);
       }
     }
   };
