@@ -1,5 +1,5 @@
 <template>
-  <md-menu
+  <md-menu ref="menu-el"
     md-align-trigger 
     md-direction="bottom left"
     :md-offset-x="10" :md-offset-y="0">
