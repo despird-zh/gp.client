@@ -2,7 +2,7 @@
   <div class="md-filter-box" :class="[themeClass]">
     <md-button class="md-icon-button md-dense md-m-r">
       <md-icon>more_vert</md-icon>
-      <md-tooltip md-direction="top">List all the quick filter</md-tooltip>
+      <md-tooltip md-direction="top">List all the quick filterc</md-tooltip>
     </md-button>
     <form action="#">
       <input :class="{'md-filter-hover': hoverClass}" type="text" placeholder="Filter" size="1">
