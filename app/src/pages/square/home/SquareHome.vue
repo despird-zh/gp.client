@@ -6,19 +6,7 @@
             
             <md-filter-box></md-filter-box>
             <div class="md-spacer"></div>
-            <md-menu
-              md-align-trigger 
-              md-direction="bottom left"
-              :md-offset-x="10" :md-offset-y="0">
-              <md-button md-menu-trigger>
-                Cls.Lvl <md-icon>keyboard_arrow_down</md-icon>
-              </md-button>
-              <md-menu-content>
-                <md-menu-item>Top Secret</md-menu-item>
-                <md-menu-item>Secret</md-menu-item>
-                <md-menu-item>Credential</md-menu-item>
-              </md-menu-content>
-            </md-menu>
+            <filter-list :name="classFilterSetting.name" :items="classFilterSetting.items" v-on:change="onClassFilterChange"></filter-list>
             <md-menu
               md-align-trigger 
               md-direction="bottom left"
@@ -67,28 +55,23 @@
                   </md-avatar>
 
                   <div class="md-list-text-container">
-                    <span>Ali Connors</span>
-                    <span>Brunch this weekend?</span>
-                    <p>I'll be in your neighborhood doing errands...</p>
+                    <span>Asian China Sina Cooperation Group</span>
+                    <span>This is group aims at co-work between local and remote people</span>
+                    <p>this is latest news I'll be in your neighborhood doing errands...</p>
                   </div>
 
                   <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">merge_type</md-icon>
+                  </md-button>
+                  <md-button class="md-icon-button md-list-action">
                     <md-icon class="md-primary">star</md-icon>
                   </md-button>
-
                   <md-divider class="md-inset"></md-divider>
                 </md-list-item>
 
               </md-list>
             </div>
-            <div class="tab-page-toolbar">
-              <md-button class="md-fab md-xmini md-primary">
-                <md-icon>save</md-icon>
-              </md-button>
-              <md-button class="md-fab md-xmini md-clean">
-                <md-icon>dialpad</md-icon>
-              </md-button>
-            </div>
+       
           </md-card-area>
         </md-card>
       </div>
@@ -214,11 +197,35 @@
     mixins: [ routePage ],
     data: function() {
       return {
-        initialValue: 'Demo2 Value'
+        classFilterSetting: {
+          name: 'CLS. LV',
+          items: [
+            {name: 'Top Secret', value: false},
+            {name: 'Secret', value: false},
+            {name: 'Credential', value: false},
+            {name: 'Not Classified', value: true}
+          ]
+        }
       };
     },
     props: {
       name: String
+    },
+    methods: {
+      onClassFilterChange(value) {
+        console.log('-- val' + value);
+      }
+    },
+    mounted: function() {
+      this.classFilterSetting = {
+        name: 'CLS. LV',
+        items: [
+          {name: 'Top Secret', value: false},
+          {name: 'Secret', value: false},
+          {name: 'Credential', value: false},
+          {name: 'Not Classified', value: true}
+        ]
+      };
     },
     beforeDestroy: function() {
       console.log('before destroy');
