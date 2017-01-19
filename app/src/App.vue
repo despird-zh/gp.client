@@ -54,16 +54,16 @@
           <div class="md-title">{{ pageTitle }}</div>
           <md-search-box></md-search-box>
           <div class="gp-notif-container">
-            <md-button class="md-icon-button md-dense" @click="logon">
+            <md-button class="md-icon-button md-xmini" @click="logon">
               <md-icon >email</md-icon>
             </md-button>
-            <md-button class="md-icon-button md-dense">
+            <md-button class="md-icon-button md-xmini">
               <md-icon >message</md-icon>
             </md-button>
             <md-avatar class="md-xdense">
               <img src="assets/images/avatar.png" alt="Avatar">
             </md-avatar>
-            <md-button class="md-icon-button md-dense">
+            <md-button class="md-icon-button md-xmini">
               <md-icon>more_vert</md-icon>
             </md-button>
           </div>

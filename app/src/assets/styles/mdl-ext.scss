@@ -18,14 +18,12 @@
     min-height: $dense-avatar-size;
 }
 
-.md-icon-button.md-dense i {
-  font-size: 21px;
-}
-
-.md-button.md-fab.md-xmini {
+.md-button.md-fab.md-xmini,
+.md-button.md-icon-button.md-xmini {
     width: 32px;
     height: 32px;
     min-height: 32px;
+    min-width: 32px;
     line-height: 32px;
     > i {
       font-size: 21px;

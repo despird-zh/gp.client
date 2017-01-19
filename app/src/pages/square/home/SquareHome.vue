@@ -60,10 +60,10 @@
                     <p>this is latest news I'll be in your neighborhood doing errands...</p>
                   </div>
 
-                  <md-button class="md-icon-button md-list-action">
+                  <md-button class="md-icon-button md-xmini md-list-action">
                     <md-icon class="md-primary">merge_type</md-icon>
                   </md-button>
-                  <md-button class="md-icon-button md-list-action">
+                  <md-button class="md-icon-button md-xmini md-list-action">
                     <md-icon class="md-primary">star</md-icon>
                   </md-button>
                   <md-divider class="md-inset"></md-divider>
