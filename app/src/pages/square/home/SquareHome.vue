@@ -3,7 +3,6 @@
       <div class="page-box">
         <md-card class="page-box-card">
           <md-toolbar class="md-dense bottom-line md-transparent">
-            
             <md-filter-box></md-filter-box>
             <div class="md-spacer"></div>
             <filter-list :name="classFilterSetting.name" :items="classFilterSetting.items" v-on:change="onClassFilterChange"></filter-list>
@@ -182,6 +181,10 @@
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: 33%;
+
+        i {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -215,17 +218,6 @@
       onClassFilterChange(value) {
         console.log('-- val' + value);
       }
-    },
-    mounted: function() {
-      this.classFilterSetting = {
-        name: 'CLS. LV',
-        items: [
-          {name: 'Top Secret', value: false},
-          {name: 'Secret', value: false},
-          {name: 'Credential', value: false},
-          {name: 'Not Classified', value: true}
-        ]
-      };
     },
     beforeDestroy: function() {
       console.log('before destroy');

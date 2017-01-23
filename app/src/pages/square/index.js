@@ -4,7 +4,7 @@
 import SquareHome from './home/SquareHome';
 import SquareTopic from './topic/SquareTopic';
 
-const ModuleName = 'Sequare';
+const ModuleName = 'Square';
 const ModuleRoutes = [
   {
     path: '/square-home',
@@ -12,8 +12,8 @@ const ModuleRoutes = [
     component: SquareHome
   },
   {
-    path: '/sequare-topic',
-    name: 'Sequare Topic',
+    path: '/square-topic',
+    name: 'Square Topic',
     component: SquareTopic
   }
 ];
